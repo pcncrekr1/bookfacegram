@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookfacegram</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main2.css">
+
+</head>
+<body>
+    <header id="header">
+        <div>
+            <a href="bookcontest.html" class="back">
+                <img src="../images/menu_left/icon/back.png" alt="뒤로가기 아이콘">
+            </a>
+            <h1><a href="new_books.html">BOOKPING</a></h1>
+        </div>
+    </header>
+
+    <div id="form_content">
+        <form action="bookcontest3.html">
+            <fieldset>
+                <legend>공모전 응모하기</legend>
+                <div class="form_group">
+                    <label for="grade">학년</label>
+                    <select name="grade" id="grade">
+                        <option value="초1">초1</option>
+                        <option value="초2">초2</option>
+                        <option value="초3">초3</option>
+                        <option value="초4">초4</option>
+                        <option value="초5">초5</option>
+                        <option value="초6">초6</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="book_name">도서</label>
+                    <select name="book_name" id="book_name">
+                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                    </select>
+                </div>
+                <div class="form_group">
+                    <label for="subject">제목</label>
+                    <input type="text" name="subject" id="subject" value="'초콜릿어 할 줄 알아?'를 읽고......">
+                </div>
+                <div class="form_group">
+                    <label for="book_content">내용</label>
+                    <textarea name="book_content" id="book_content" cols="30" rows="10">'초콜릿어 할 줄 알아?'를 읽어보았습니다.
+난독증 영국 소녀와 시리아 난민 소녀가 언어장벽을 뛰어넘고 서로 공감하고 우정을 나누는 것을 보며 큰 감명을 받았습니다.
+
+
+해당 독후감 파일은 함께 첨부하여 업로드합니다.
+
+
+감사합니다.
+                    </textarea>
+                </div>
+                <span class="file_label_replace">파일</span>
+                <div class="filebox bs3-primary">
+                    <input class="upload-name" value="파일선택" disabled="disabled">
+                    <label for="ex_filename">찾기</label> 
+                    <input type="file" id="ex_filename" class="upload-hidden"> 
+                </div>
+                <input type="submit" value="등록" class="contest_submit">
+            </fieldset>
+        </form>
+    </div>
+
+
+    <!-- jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- My JS -->
+    <script src="../js/main2.js"></script>
+
+</body>
+</html>

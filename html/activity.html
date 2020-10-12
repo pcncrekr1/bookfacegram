@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookfacegram</title>
+
+    <!-- bxslider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+    <header id="header">
+        <div>
+            <a href="#" class="menu_left">
+                <img src="../images/menu_left/icon/menu_icon.png" alt="메뉴 아이콘">
+            </a>
+            <h1><a href="new_books.html">BOOKPING</a></h1>
+        </div>
+    </header>
+
+    <div id="navi">
+        <div class="gnb_hidden">
+            <div class="user_yellow">
+                <img src="../images/menu_left/icon/user.png" alt="프로필 사진">
+                <div><strong>PCNC_TT</strong>님</div>
+            </div>
+            <ul>
+                <li><a href="notice.html">ㆍ공지사항</a></li>
+                <li><a href="event.html">ㆍ이벤트</a></li>
+                <li><a href="bookdrawer.html">ㆍ책 서랍</a></li>
+                <li><a href="store.html">ㆍ북핑스토어</a></li>
+                <li><a href="profile.html">ㆍ개인정보수정</a></li>
+                <li><a href="faq.html">ㆍ도움말</a></li>
+                <li><a href="setting.html">ㆍ앱설정</a></li>
+            </ul>
+        </div>
+
+        <!-- gnb_hidden 투명 배경 -->
+        <div class="hidden_cover">
+        </div>
+    </div>
+
+    
+    <div id="search">
+        <div class="search_wrap">
+            <a href="#" class="camera_btn">
+                <label for="camera"></label>
+                <input type="file" id="camera" name="camera" capture="camera" accept="image/*"/>
+            </a>
+            <input type="text" name="input_search" class="input_search" id="inputSearch">
+            <a href="#" class="magnifier_btn">
+                <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
+            </a>
+        </div>
+    </div>
+    
+    <div id="tab">
+        <!-- tab menu -->
+        <div class="main_tab_menu">
+            <a href="new_books.html">NEW BOOKS</a>
+            <a href="my_books.html">MY BOOKS</a>
+            <a href="activity.html" class="main_tab_active">ACTIVITY</a>
+        </div>
+
+        <h2 class="progress_title">이번달 나의 독서활동 참여도</h2>
+        <div class="circle_progress">
+            <div id="circleProgress"></div>
+            <div>
+                8월<br>
+                나의 독서활동<br>
+                참여도
+            </div>
+        </div>
+
+        <div class="activity_list">
+            <ul>
+                <li class="clearfix">
+                    <img src="../images/main_page/activity/icon/exam.jpg" alt="문해고사">
+                    <h3>문해고사</h3>
+                    <a href="booktest.html">GO</a>
+                </li>
+                <li class="clearfix">
+                    <img src="../images/main_page/activity/icon/competition.jpg" alt="독후감대회">
+                    <h3>독후감대회</h3>
+                    <a href="bookcontest.html">GO</a>
+                </li>
+                <li class="clearfix">
+                    <img src="../images/main_page/activity/icon/kbs_exam.jpg" alt="책과함께, KBS한국어 능력시험">
+                    <h3>책과함께, KBS한국어 능력시험</h3>
+                    <a href="#">GO</a>
+                </li>
+                <li class="clearfix">
+                    <img src="../images/main_page/activity/icon/quiz.jpg" alt="독서퀴즈">
+                    <h3>독서퀴즈</h3>
+                    <a href="#">GO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!-- jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- bxslider JS -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+
+    <!-- progressbar JS -->
+    <script src="../js/circle-progress.min.js"></script>
+
+    <!-- My JS -->
+    <script src="../js/activity.js"></script>
+
+</body>
+</html>

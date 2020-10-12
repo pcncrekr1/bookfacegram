@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookfacegram</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/sub.css">
+
+</head>
+<body id="profileBody">
+    <header id="header">
+        <div>
+            <a href="new_books.html" class="back">
+                <img src="../images/menu_left/icon/back.png" alt="뒤로가기 아이콘">
+            </a>
+            <h1>개인정보수정</h1>
+        </div>
+    </header>
+
+    <div id="profile_photo">
+        <div>
+            <a href="#" class="profile_camera_btn">
+                <label for="profile_camera"></label>
+                <input type="file" id="profile_camera" name="profile_camera" capture="camera" accept="image/*"/>
+            </a>
+            <img src="../images/menu_left/personal_info/camera.png" alt="카메라 아이콘">
+        </div>
+    </div>
+
+    <div id="profile_basic">
+        <h2>기본정보</h2>
+        <ul>
+            <li>
+                <span>아이디</span>PCNC_TT
+            </li>
+            <li>
+                <span>이름</span>우사미
+            </li>
+            <li>
+                <span>연락처</span><input type="tel" id="profile_tel" name="profile_tel" value="010-0000-0000">
+            </li>
+            <li>
+                <span>이메일</span><input type="email" id="profile_email" name="profile_email" value="hsy1958@pcnc.dooray.com">
+            </li>
+        </ul>
+    </div>
+
+    <div id="profile_account">
+        <h2>계정</h2>
+        <ul>
+            <li>
+                <a href="#" class="change_pw_btn">
+                    비밀번호변경 <img src="../images/menu_left/personal_info/angle_right.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    로그아웃 <img src="../images/menu_left/personal_info/angle_right.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="withdraw_btn">
+                    회원탈퇴 <img src="../images/menu_left/personal_info/angle_right.png" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    
+    <!-- 비밀번호변경 -->
+    <div id="changePassword">
+        <div class="change_pw_title">
+            <a href="#" class="x_btn_pw">
+                <img src="../images/menu_left/personal_info/x_icon.png" alt="">
+            </a>
+            <h2>비밀번호변경</h2>
+        </div>
+        <form action="profile.html">
+            <input type="password" name="password" id="presentPw" placeholder="현재 비밀번호를 입력하세요.">
+            <input type="password" name="password" id="newPw" placeholder="새 비밀번호를 입력하세요.">
+            <input type="submit" value="등록" class="pw_submit">
+        </form>
+    </div>
+
+    <!-- 회원탈퇴 -->
+    <div id="withdraw">
+        <div class="withdraw_title">
+            <a href="#" class="x_btn_withdraw">
+                <img src="../images/menu_left/personal_info/x_icon.png" alt="">
+            </a>
+            <h2>회원탈퇴</h2>
+        </div>
+        <div class="caution">
+            북핑 회원탈퇴 전, 아래 주의사항을 반드시 숙지하고<br>
+            탈퇴 진행 부탁드립니다.
+        </div>
+        <form action="profile.html">
+            <div class="form_group">
+                <input type="checkbox" name="checkWithdraw" id="check30Day">
+                <label for="check30Day"></label>
+                30일 내 재가입 불가
+            </div>
+            <div class="form_group">
+                <input type="checkbox" name="checkWithdraw" id="checkPoint">
+                <label for="checkPoint"></label>
+                잔여 포인트 모두 소멸<span>(복구불가)</span>
+            </div>
+            <input type="submit" value="다음" class="withdraw_submit">
+        </form>
+    </div>
+
+    <!-- 비밀번호변경, 회원탈퇴 불투명 배경 -->
+    <div class="hidden_bg"></div>
+
+
+
+
+    <!-- jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- bxslider JS -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- My JS -->
+    <script src="../js/sub.js"></script>
+
+</body>
+</html>

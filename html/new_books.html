@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookfacegram</title>
+
+    <!-- bxslider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+    <header id="header">
+        <div>
+            <a href="#" class="menu_left">
+                <img src="../images/menu_left/icon/menu_icon.png" alt="메뉴 아이콘">
+            </a>
+            <h1><a href="new_books.html">BOOKPING</a></h1>
+        </div>
+    </header>
+
+    <div id="navi">
+        <div class="gnb_hidden">
+            <div class="user_yellow">
+                <img src="../images/menu_left/icon/user.png" alt="프로필 사진">
+                <div><strong id="id_name"></strong> 님</div>
+            </div>
+            <ul>
+                <li><a href="notice.html">ㆍ공지사항</a></li>
+                <li><a href="event.html">ㆍ이벤트</a></li>
+                <li><a href="bookdrawer.html">ㆍ책 서랍</a></li>
+                <li><a href="store.html">ㆍ북핑스토어</a></li>
+                <li><a href="profile.html">ㆍ개인정보수정</a></li>
+                <li><a href="faq.html">ㆍ도움말</a></li>
+                <li><a href="setting.html">ㆍ앱설정</a></li>
+            </ul>
+        </div>
+
+        <!-- gnb_hidden 투명 배경 -->
+        <div class="hidden_cover">
+        </div>
+    </div>
+    
+    <div id="search">
+        <div class="search_wrap">
+            <a href="#" class="camera_btn">
+                <label for="camera"></label>
+                <input type="file" id="camera" name="camera" capture="camera" accept="image/*"/>
+            </a>
+            <input type="text" name="input_search" class="input_search" id="inputSearch">
+            <a href="#" class="magnifier_btn">
+                <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
+            </a>
+        </div>
+    </div>
+    
+    
+    <div id="tab">
+        <!-- tab menu -->
+        <div class="main_tab_menu">
+            <a href="new_books.html" class="main_tab_active">NEW BOOKS</a>
+            <a href="my_books.html">MY BOOKS</a>
+            <a href="activity.html">ACTIVITY</a>
+        </div>
+
+        <!-- tab contents -->
+        <div class="main_tab_content">
+            <div class="main_banner_wrap">
+                <ul class="main_banner_bx">
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/banner/banner1.jpg" alt="메인화면 NEW BOOKS 배너1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/banner/banner2.jpg" alt="메인화면 NEW BOOKS 배너2">
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <h2>신간을 확인해보세요!</h2>
+            <div class="main_new_wrap">
+                <ul class="main_new_bx">
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book1.jpg" alt="메인화면 신간도서1">
+                            <div class="book_name">
+                                존리/<br>
+                                존리의 부자되기 습관
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book2.jpg" alt="메인화면 신간도서2">
+                            <div class="book_name">
+                                박성희/<br>
+                                이토록 공부가 재미있어지는 순간
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book3.jpg" alt="메인화면 신간도서3">
+                            <div class="book_name">
+                                김승호/<br>
+                                돈의 속성
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book4.jpg" alt="메인화면 신간도서4">
+                            <div class="book_name">
+                                존리/<br>
+                                존리의 부자되기 습관
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book5.jpg" alt="메인화면 신간도서5">
+                            <div class="book_name">
+                                조용, 잠산/<br>
+                                사이코지만 괜찮아
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book6.jpg" alt="메인화면 신간도서6">
+                            <div class="book_name">
+                                존리/<br>
+                                존리의 부자되기 습관
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <h2 class="kbs_title">
+                <span>학년별</span> 책과함께, KBS한국어능력시험<br>
+                선정도서를 확인해보세요!
+            </h2>
+            <div class="main_kbs_wrap">
+                <ul class="main_kbs_bx">
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book7.jpg" alt="메인화면 kbs 선정도서1">
+                            <div class="book_choice">
+                                누리급(유치원)/<br>
+                                선정도서
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book8.jpg" alt="메인화면 kbs 선정도서2">
+                            <div class="book_choice">
+                                (준)5급(초등1ㆍ2학년)/<br>
+                                선정도서
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="bookinfo.html">
+                            <img src="../images/main_page/new_books/new_book/book9.jpg" alt="메인화면 kbs 선정도서3">
+                            <div class="book_choice">
+                                (준)4급(초등3ㆍ4학년)/<br>
+                                선정도서
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book10.jpg" alt="메인화면 kbs 선정도서4">
+                            <div class="book_choice">
+                                (준)3급(초등5ㆍ6학년)/<br>
+                                선정도서
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book11.jpg" alt="메인화면 kbs 선정도서5">
+                            <div class="book_choice">
+                                (준)3급(초등5ㆍ6학년)/<br>
+                                선정도서
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../images/main_page/new_books/new_book/book12.jpg" alt="메인화면 kbs 선정도서6">
+                            <div class="book_choice">
+                                (준)3급(초등5ㆍ6학년)/<br>
+                                선정도서
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- bxslider JS -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+
+    <!-- progressbar JS -->
+    <script src="../js/circle-progress.min.js"></script>
+
+    <!-- My JS -->
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

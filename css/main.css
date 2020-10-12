@@ -1,0 +1,477 @@
+@charset "utf-8";
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+
+/* ************* 레이아웃 구성 시작 ************** */
+body {
+    position: relative;
+}
+
+#header {
+    width: 100%;
+    height: 40px;
+}
+#navi{
+    width: 100%;
+}
+#search {
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+}
+#tab {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ************* 개별영역 구성 시작 ************** */
+/* header */
+#header > div {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 0 5%;
+    position: relative;
+}
+#header .menu_left {
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+}
+#header .menu_left img{
+    width: 30px;
+    height: 100%;
+}
+#header h1 {
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 40px;
+
+    position: absolute; left: 50%; top: 60%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+/* navi */
+#navi .gnb_hidden {
+    display: block;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+
+    -webkit-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    -moz-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    -o-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    -ms-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    
+    position: fixed; 
+    left: -100%;
+    top: 0; 
+    z-index: 20;
+}
+#navi .gnb_hidden .user_yellow {
+    width: 100%;
+    height: 250px;
+    background-color: #FED500;
+    padding: 65px 0 0 20px;
+}
+#navi .gnb_hidden .user_yellow img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 35px;
+}
+#navi .gnb_hidden .user_yellow div {
+    font-size: 1.8rem;
+}
+
+#navi .gnb_hidden ul {
+    padding: 40px 0 0 20px;
+}
+#navi .gnb_hidden ul li {
+    margin-bottom: 25px;
+}
+#navi .gnb_hidden ul li a {
+    font-size: 2rem;
+}
+
+#navi .hidden_cover {
+    width: 100%;
+    height: 100vh;
+    position: fixed; 
+    left: -100%;
+    top: 0;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+
+/* search */
+#search .search_wrap {
+    width: 90%;
+    height: 100%;
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    position: relative;
+}
+#search .search_wrap .camera_btn {
+    width: 35px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+#search .search_wrap .camera_btn label {
+    width: 100%;
+    height: 100%; 
+    display: inline-block;
+    cursor: pointer;
+    background: url(../images/main_page/search/camera.png) no-repeat 0 0;
+    background-size: cover;
+} 
+#search .search_wrap .camera_btn input[type="file"] { /* 파일 필드 숨기기 */ 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0; 
+}
+#search .search_wrap .input_search {
+    width: 90%;
+    height: 100%;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+#search .search_wrap .input_search:focus {
+    outline:none;
+}
+#search .search_wrap .magnifier_btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+#search .search_wrap .magnifier_btn img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* tab menu */
+#tab .main_tab_menu {
+    width: 100%;
+    height: 63px;
+}
+#tab .main_tab_menu a {
+    display: inline-block;
+    width: 32.5%;
+    text-align: center;
+    line-height: 63px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    position: relative;
+}
+#tab .main_tab_menu a:hover::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FED500;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+}
+/* 탭 활성화 클래스 */
+.main_tab_active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FED500;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+}
+
+
+/* tab contents */
+#tab .main_tab_content h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+#tab .main_tab_content .kbs_title span {
+    color: #E86644;
+}
+#tab .main_tab_content h2,
+#tab .main_tab_content > div {
+    padding: 0 5%;
+}
+#tab .main_tab_content .main_banner_wrap {
+    padding: 0;
+}
+#tab .main_new_bx li,
+#tab .main_kbs_bx li {
+    background: url(../images/main_page/new_books/new_book/background.png) no-repeat 0 0;
+    background-size: contain;
+    padding: 5px;
+}
+#tab .main_new_bx li a,
+#tab .main_kbs_bx li a {
+    width: 100%;
+    height: 100%;
+}
+#tab .main_new_bx li a > div,
+#tab .main_kbs_bx li a > div {
+    margin-top: 10px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    overflow:hidden;
+    font-size: 1rem;
+}
+
+#tab .custom_book_title {
+    font-size: 1.4rem;
+    margin: 20px 0 20px 5%;
+}
+
+/* my_books tab */
+#tab .my_tab_menu {
+    width: 100%;
+    height: 42px;
+}
+#tab .my_tab_menu ul {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+}
+#tab .my_tab_menu ul li {
+    width: 32%;
+    display: inline-block;
+    text-align: center;
+}
+#tab .my_tab_menu ul li a {
+    border: 1px solid #262626;
+    border-radius: 42px;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+}
+#tab .my_tab_menu ul li a:hover {
+    background-color: #262626;
+    color: #fff;
+}
+
+/* 탭메뉴 활성화 클래스 */
+.my_tab_menu_on {
+    background-color: #262626 !important;
+    color: #fff !important;
+}
+
+#tab .show_all {
+    width: 100%;
+    height: 20px;
+    text-align: right;
+    padding-right: 5%;
+    margin-bottom: 20px;
+}
+
+#tab .tab_genre,
+#tab .tab_author,
+#tab .tab_subject {
+    display: none;
+    padding: 0 5%;
+}
+#tab .tab_genre h2,
+#tab .tab_author h2,
+#tab .tab_subject h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+#tab .my_self_bx li,
+#tab .my_essay_bx li,
+#tab .my_author_bx1 li,
+#tab .my_author_bx2 li,
+#tab .my_famous_bx li,
+#tab .my_family_bx li {
+    background: url(../images/main_page/new_books/new_book/background.png) no-repeat 0 0;
+    background-size: contain;
+    padding: 5px;
+}
+#tab .my_self_bx li a > div,
+#tab .my_essay_bx li a > div,
+#tab .my_author_bx1 li a > div,
+#tab .my_author_bx2 li a > div,
+#tab .my_famous_bx li a > div,
+#tab .my_family_bx li a > div {
+    margin-top: 10px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    overflow:hidden;
+    font-size: 1rem;
+}
+
+
+/* activity tab */
+#tab .progress_title {
+    font-size: 1.4rem;
+    margin: 20px 0 20px 5%;
+}
+#tab .circle_progress {
+    position: relative;
+}
+#tab .circle_progress #circleProgress {
+    padding: 30px;
+    text-align: center;
+}
+#tab .circle_progress #circleProgress canvas {
+    max-width: 100%;
+    max-height: 100%;
+}
+#tab .circle_progress div:last-child {
+    position: absolute; left: 50%; top: 50%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    text-align: center;
+    color: #2C8DBA;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#tab .activity_list {
+    width: 90%;
+    margin: 0 auto;
+}
+#tab .activity_list ul {
+    width: 100%;
+}
+#tab .activity_list ul li { 
+    width: 100%;
+    height: 60px;
+    border-right: 2px solid #D9D9D9;
+    border-bottom: 2px solid #D9D9D9;
+    margin-bottom: 20px;
+}
+#tab .activity_list ul li img {
+    display: block;
+    width: 50px;
+    height: 40px;
+    float: left;
+    margin: 10px;
+}
+#tab .activity_list ul li h3 {
+    float: left;
+    line-height: 60px;
+    font-size: 1.2rem;
+}
+#tab .activity_list ul li a {
+    display: block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #333333;
+    border-radius: 30px;
+    color: #fff;
+    float: right;
+    margin: 10px 20px 0 0;
+}
+
+
+
+
+
+
+/* ******************* Media Query ********************* */
+/* 태블릿 디바이스 (가로 해상도가 768px 보다 큰 화면에 적용) */
+@media (min-width: 768px) { 
+    #tab .main_new_bx li,
+    #tab .main_kbs_bx li,
+    #tab .my_self_bx li,
+    #tab .my_essay_bx li,
+    #tab .my_author_bx1 li,
+    #tab .my_author_bx2 li,
+    #tab .my_famous_bx li,
+    #tab .my_family_bx li {
+        padding: 25px;
+    }
+
+    /* my_books tab */
+    #tab .my_tab_menu {
+        height: 63px;
+    }
+    #tab .my_tab_menu ul {
+        width: 60%;
+    }
+    #tab .my_tab_menu ul li a {
+        padding: 15px 25px;
+        border-radius: 63px;
+        font-size: 2rem;
+    }
+
+
+    /* font size */
+    #tab .main_tab_menu a {
+        font-size: 1.8rem;
+    }
+    #tab .main_tab_content h2 {
+        font-size: 1.8rem;
+    }
+    #tab .main_new_bx li a > div,
+    #tab .main_kbs_bx li a > div {
+        font-size: 1.4rem;
+    }
+    
+    #tab .custom_book_title {
+        font-size: 1.8rem;
+    }
+    #tab .my_tab_menu ul li a {
+        font-size: 1.6rem;
+    }
+    #tab .tab_genre h2,
+    #tab .tab_author h2,
+    #tab .tab_subject h2 {
+        font-size: 1.8rem;
+    }
+    #tab .my_self_bx li a > div,
+    #tab .my_essay_bx li a > div,
+    #tab .my_author_bx1 li a > div,
+    #tab .my_author_bx2 li a > div,
+    #tab .my_famous_bx li a > div,
+    #tab .my_family_bx li a > div {
+        font-size: 1.4rem;
+    }
+    #tab .progress_title {
+        font-size: 1.8rem;
+    }
+    
+    #tab .circle_progress div:last-child {
+        font-size: 2rem;
+    }
+    #tab .activity_list ul li h3 {
+        font-size: 1.6rem;
+    }
+}

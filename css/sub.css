@@ -1,0 +1,1077 @@
+@charset "utf-8";
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+
+/* **************** 공통영역 구성 시작 ******************* */
+body {
+    overflow-x: hidden;
+}
+
+/* header */
+#header {
+    width: 100%;
+    height: 63px;
+    position: relative;
+}
+
+#header > div {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+#header .back {
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+#header .back img {
+    width: 100%;
+    height: 100%;
+}
+#header h1 {
+    position: absolute; left: 50%; top: 50%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    font-size: 2rem;
+}
+
+
+
+
+/* **************** notice.html ******************* */
+/* **************** event.html ******************* */
+/* 레이아웃 구성 시작 */
+#notice_list,
+#event_list {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #F0F0F0;
+}
+
+/* 개별영역 선언 시작 */
+#notice_list ul,
+#event_list ul {
+    width: 100%;
+    height: 100%;
+}
+#notice_list ul li,
+#event_list ul li {
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    border-bottom: 1px solid #F0F0F0;
+}
+#notice_list ul li a h2,
+#event_list ul li a h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+#notice_list ul li a .notice_list_date,
+#event_list ul li a .event_list_date {
+    color: #B8B8B8;
+}
+
+
+/* **************** notice2.html ******************* */
+#notice2Title,
+#notice2Content {
+    width: 100%;
+    padding: 20px;
+}
+#notice2Title h2 {
+    font-size: 1.8rem;
+    float: left;
+}
+#notice2Title > div {
+    font-size: 1.4rem;
+    color: #C1C1C1;
+    float: right;
+}
+
+
+
+/* **************** event2.html ******************* */
+#event2 {
+    width: 100%;
+    padding: 5%;
+}
+#event2 img {
+    width: 100%;
+    height: 100%;
+}
+#event2 a {
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #F9B924;
+    margin: 30px auto;
+}
+
+
+
+/* **************** event3.html ******************* */
+#event3 {
+    width: 100%;
+    padding: 5%;
+}
+#event3 img {
+    width: 100%;
+    height: 100%;
+}
+#event3 h2 {
+    width: 100%;
+    font-size: 1.8rem;
+    margin: 20px 0 10px 0;
+}
+#event3 form {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 10px;
+}
+#event3 form textarea {
+    width: 100%;
+    height: 100px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+#event3 form input {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-radius: 0;
+    border: 0;
+    outline: none;
+    font-size: 1.4rem;
+    background-color: #333333;
+    color: #fff;
+    margin-top: 10px;
+}
+#event3 ul {
+    width: 100%;
+}
+#event3 ul li {
+    margin: 20px 0;
+}
+#event3 ul li .comment_info {
+    width: 100%;
+    color: #9D9D9D;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+#event3 ul li .comment_info .comment_name {
+    float: left;
+}
+#event3 ul li .comment_info .comment_date {
+    float: right;
+}
+
+
+
+
+/* **************** bookdrawer.html ******************* */
+/* 레이아웃 구성 시작 */
+#sns_wrap {
+    width: 100%;
+    height: 100px;
+    padding-left: 20px;
+}
+#drawer_make {
+    width: 96%;
+    height: 80px;
+}
+#drawers {
+    width: 96%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+/* 개별영역 선언 시작 */
+#sns_wrap .sns_user {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 15px;
+}
+#sns_wrap .sns_user img {
+    width: 100%;
+    height: 100%;
+}
+#sns_wrap .sns_box {
+    width: 75%;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+}
+#sns_wrap .sns_box > div {
+    display: inline-block;
+    width: 32%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+#sns_wrap .sns_box > div img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 10px auto;
+}
+#sns_wrap .sns_box > div span {
+    display: block;
+    color: #8B8B8B;
+    margin-top: 10px;
+}
+
+#drawer_make {
+    border-top: 1px solid rgba(231, 231, 231, 0.3);
+    border-right: 1px solid rgba(231, 231, 231, 0.8);
+    border-left: 1px solid rgba(231, 231, 231, 0.8);
+    border-bottom: 2px solid rgba(231, 231, 231, 1);
+    line-height: 80px;
+    margin: 20px auto;
+}
+#drawer_make > img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 20px;
+}
+#drawer_make h2 {
+    font-size: 1.6rem;
+    float: left;
+}
+#drawer_make > a {
+    display: block;
+    width: 15px;
+    height: 25px;
+    float: right;
+    margin: 23px;
+}
+#drawer_make > a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#drawers .drawer {
+    width: 48%;
+    float: left;
+    margin-bottom: 30px;
+}
+#drawers .drawer:nth-child(2n)  {
+    margin-left: 4%;
+}
+#drawers .drawer > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+#drawers .drawer .drawer_title {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+#drawers .drawer .drawer_title span {
+    display: block;
+    float: right;
+    font-weight: 400;
+    color: #aaa;
+    margin-right: 10px;
+}
+#drawers .drawer .drawer_title a img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    float: right;
+}
+
+
+
+/* **************** point.html ******************* */
+/* 레이아웃 구성 시작 */
+#totalPointWrap {
+    width: 96%;
+    height: 150px;
+    background-color: #FFF7EC;
+    margin: 0 auto;
+}
+#detailPointList {
+    width: 100%;
+}
+
+/* 개별영역 선언 시작 */
+#totalPointWrap .left_point {
+    width: 55%;
+    height: 100%;
+    float: left;
+    padding: 40px 0 0 20px;
+}
+#totalPointWrap .left_point div:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#totalPointWrap .left_point div:last-child {
+    font-size: 4rem;
+    font-weight: 500;
+}
+#totalPointWrap .right_point {
+    width: 45%;
+    height: 100%;
+    font-weight: bold;
+    float: left;
+}
+#totalPointWrap .right_point .top_point {
+    width: 100%;
+    height: 49%;
+    border-bottom: 1px solid #F3E3CA;
+    padding-top: 45px;
+}
+#totalPointWrap .right_point .top_point > div:first-child {
+    float: left;
+}
+#totalPointWrap .right_point .top_point > div:last-child {
+    float: right;
+    margin-right: 20px;
+}
+#totalPointWrap .right_point .bottom_point {
+    width: 100%;
+    height: 50%;
+    padding-top: 15px;
+}
+#totalPointWrap .right_point .bottom_point > div:first-child {
+    float: left;
+}
+#totalPointWrap .right_point .bottom_point > div:last-child {
+    float: right;
+    margin-right: 20px;
+}
+#detailPointList {
+    width: 100%;
+    height: 100%;
+}
+#detailPointList ul {
+    width: 100%;
+    height: 100%;
+}
+#detailPointList ul li {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid #F4F4F4;
+    padding: 0 5%;
+}
+#detailPointList ul li div:first-child {
+    float: left;
+}
+#detailPointList ul li div:last-child {
+    float: right;
+}
+
+
+
+/* **************** follower.html ******************* */
+#followerList {
+    width: 100%;
+    height: 100%;
+}
+#followerList ul {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #F9F9F9;
+}
+#followerList ul li {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    border-bottom: 1px solid #F9F9F9;
+}
+#followerList ul li img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px 20px 10px 2%;
+}
+#followerList ul li span {
+    float: left;
+}
+#followerList ul li button {
+    display: block;
+    width: 80px;
+    height: 40px;
+    float: right;
+    border-radius: 2px;
+    border: 1px solid #000;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 15px 2% 10px 0;
+}
+#followerList ul li button:hover {
+    background-color: #333333;
+    color: #fff;
+}
+
+
+
+
+/* **************** following.html ******************* */
+#followingList {
+    width: 100%;
+    height: 100%;
+}
+#followingList ul {
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #F9F9F9;
+}
+#followingList ul li {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    border-bottom: 1px solid #F9F9F9;
+}
+#followingList ul li img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px 20px 10px 2%;
+}
+#followingList ul li span {
+    float: left;
+}
+#followingList ul li button {
+    display: block;
+    width: 80px;
+    height: 40px;
+    float: right;
+    border-radius: 2px;
+    border: 1px solid #000;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 15px 2% 10px 0;
+}
+#followingList ul li button:hover {
+    background-color: #333333;
+    color: #fff;
+}
+/* 팔로우 버튼 토글 클래스 */
+.followToggle {
+    background-color: #333333 !important;
+    color: #fff !important;
+}
+
+
+
+
+
+
+/* **************** store.html ******************* */
+/* 레이아웃 구성 시작 */
+#store_tab {
+    width: 100%;
+    padding: 2%;
+}
+
+/* 개별영역 선언 시작 */
+#store_tab .store_tab_menu {
+    width: 100%;
+    height: 42px;
+    margin-bottom: 20px;
+}
+#store_tab .store_tab_menu ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+#store_tab .store_tab_menu ul li {
+    display: inline-block;
+    width: 32.5%;
+    line-height: 42px;
+    text-align: center;
+}
+#store_tab .store_tab_menu ul li a {
+    display: block;
+    width: 90%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-left: 1px solid rgb(223, 223, 223, 0.5);
+    border-right: 1px solid rgb(223, 223, 223, 0.5);
+    border-bottom: 1px solid rgb(200, 200, 200, 1);
+    border-radius: 5px;
+    margin: 0 auto;
+}
+#store_tab .store_tab_menu ul li a:hover {
+    background-color: #FED500;
+    border-radius: 10px;
+}
+
+/* 탭메뉴 활성화 클래스 */
+.store_tab_menu_on {
+    background-color: #FED500 !important;
+    border-radius: 10px !important;
+}
+
+#store_tab .store_tab_content {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+#store_tab .store_tab_content ul {
+    width: 100%;
+    height: 100%;
+}
+#store_tab .store_tab_content ul li {
+    width: 46%;
+    float: left;
+    background-color: #F8F8F8;
+    border-radius: 15px;
+    padding: 2%;
+    margin: 2%;
+}
+#store_tab .store_tab_content ul li a,
+#store_tab .store_tab_content ul li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#store_tab .store_tab_content ul li h2 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+}
+#store_tab .store_tab_content ul li .price1 {
+    font-size: 1.2rem;
+    text-align: right;
+}
+#store_tab .store_tab_content ul li .price2 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+
+
+/* **************** store2.html ******************* */
+#store2 {
+    width: 100%;
+}
+#store2 .store2_wrap {
+    width: 100%;
+    position: relative;
+}
+#store2 .store2_wrap img {
+    width: 100%;
+    height: 100%;
+}
+#store2 .store2_wrap a {
+    display: block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #F9B924;
+    margin: 30px auto;
+}
+
+
+
+/* **************** profile.html ******************* */
+/* 레이아웃 구성 시작 */
+#profileBody {
+    position: relative;
+}
+#profile_photo {
+    width: 100%;
+    height: 70px;
+    margin: 20px 0;
+}
+#profile_basic,
+#profile_account {
+    width: 100%;
+}
+
+/* 개별영역 구성 시작 */
+#profile_photo > div {
+    width: 70px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#profile_photo .profile_camera_btn {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#profile_photo .profile_camera_btn label {
+    width: 100%;
+    height: 100%; 
+    display: inline-block;
+    cursor: pointer;
+    background: url(../images/menu_left/icon/user.png) no-repeat 0 0;
+    background-size: cover;
+} 
+#profile_photo .profile_camera_btn input[type="file"] { /* 파일 필드 숨기기 */ 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0; 
+}
+#profile_photo > div img {
+    width: 32%;
+    height: 32%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#profile_basic h2,
+#profile_account h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+#profile_basic ul {
+    margin-bottom: 40px;
+}
+#profile_basic ul li,
+#profile_account ul li {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #F9F9F9;
+    padding-left: 20px;
+}
+#profile_basic ul li span {
+    display: inline-block;
+    width: 25%;
+}
+#profile_basic ul li input {
+    outline: none;
+    border: 0;
+}
+#profile_account ul {
+    border-top: 1px solid #F9F9F9;
+}
+#profile_account ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#profile_account ul li a img {
+    display: block;
+    width: 10px;
+    height: 20px;
+    float: right;
+    margin: 10px 50px 0 0;
+}
+/* 비밀번호변경 */
+#changePassword {
+    display: none;
+    width: 100%;
+    height: 50%;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+}
+#changePassword .change_pw_title {
+    width: 100%;
+    height: 63px;
+    border-bottom: 1px solid #EDEDED;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+    position: relative;
+}
+#changePassword .change_pw_title a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 20px 0 0 20px;
+}
+#changePassword .change_pw_title a img {
+    width: 100%;
+    height: 100%;
+}
+#changePassword .change_pw_title h2 {
+    position: absolute; left: 50%; top: 50%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    font-size: 1.6rem;
+}
+#changePassword form {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+}
+#changePassword form input {
+    display: block;
+    width: 100%;
+    height: 63px;
+    line-height: 63px;
+    border: 0;
+    border: 1px solid #F0F0F0;
+    outline: none;
+    padding-left: 20px;
+}
+#changePassword form .pw_submit {
+    width: 98%;
+    border: 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.4rem;
+    position: absolute;
+    bottom: 70px;
+    left: 1%;
+    padding: 0;
+}
+/* 회원탈퇴 */
+#withdraw {
+    display: none;
+    width: 100%;
+    height: 50%;
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 20;
+}
+#withdraw .withdraw_title {
+    width: 100%;
+    height: 63px;
+    border-bottom: 1px solid #EDEDED;
+    border-radius: 20px 20px 0 0;
+    background-color: #fff;
+    position: relative;
+}
+#withdraw .withdraw_title a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 20px 0 0 20px;
+}
+#withdraw .withdraw_title a img {
+    width: 100%;
+    height: 100%;
+}
+#withdraw .withdraw_title h2 {
+    position: absolute; left: 50%; top: 50%;
+    
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+
+    font-size: 1.6rem;
+}
+#withdraw .caution {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #929292;
+    padding: 20px;
+}
+#withdraw form {
+    width: 100%;
+    height: 75%;
+    background-color: #fff;
+    position: relative;
+}
+#withdraw form .form_group {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+}
+#withdraw form .form_group input {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+/* 체크박스를 이미지로 변경 */
+#withdraw form .form_group input[type=checkbox] { 
+    display:none; 
+}
+#withdraw form .form_group input[type=checkbox] + label { 
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background: url('../images/menu_left/personal_info/withdraw_check1.png') no-repeat 0 0;
+    background-size: contain;
+    margin-right: 10px;
+}
+#withdraw form .form_group input[type=checkbox]:checked + label { 
+    background-image: url('../images/menu_left/personal_info/withdraw_check2.png');
+}
+
+#withdraw form .withdraw_submit {
+    width: 98%;
+    height: 63px;
+    border: 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 70px;
+    left: 1%;
+    padding: 0;
+}
+/* 비밀번호변경, 회원탈퇴 불투명배경 */
+.hidden_bg {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+
+
+
+/* **************** faq.html ******************* */
+/* 레이아웃 구성 시작 */
+#faqTabMenu {
+    width: 100%;
+    height: 63px;
+    border-bottom: 1px solid #ddd;
+}
+#faqTabContent {
+    width: 100%;
+    height: 100%;
+}
+
+/* 개별영역 구성 시작 */
+/* tab menu */
+#faqTabMenu .faq_tab_menu a {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    line-height: 63px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    position: relative;
+}
+#faqTabMenu .faq_tab_menu a:hover::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FED500;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+}
+/* 탭 활성화 클래스 */
+.faq_tab_active::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #FED500;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+}
+
+#faqTabContent .faq_tab_content {
+    display: none;
+}
+#faqTabContent .faq_tab_content ul li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+#faqTabContent .faq_tab_content ul li h2 {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background: url(../images/menu_left/icon/angle_down.png) no-repeat 97% 50%;
+    background-size: 20px 12px;
+}
+#faqTabContent .faq_tab_content ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 30px 5%;
+}
+#faqTabContent .faq_tab_content ul li a img {
+    display: block;
+    width: 20px;
+    height: 10px;
+    float: right;
+}
+#faqTabContent .faq_tab_content ul li p {
+    display: none;
+    padding: 0 5% 30px 5%;
+}
+/* 토글 클래스 설정하기 */
+.angle_toggle{
+    background-image: url(../images/menu_left/icon/angle_up.png) !important;
+    background-size: 20px 12px !important;
+}
+
+
+
+/* **************** setting.html ******************* */
+/* 레이아웃 구성 시작 */
+#setting {
+    width: 100%;
+}
+
+/* 개별영역 구성 시작 */
+#setting h2 {
+    font-size: 1.6rem;
+    border-bottom: 1px solid #F9F9F9;
+    padding: 30px 0 20px 20px;
+}
+#setting ul {
+    width: 100%;
+    height: 100%;
+}
+#setting ul li {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #F9F9F9;
+    padding: 20px;
+}
+
+/* switch button */
+#setting .switch {
+    float: right;
+    width: 52px;
+    height: 30px;
+    position: relative;
+    top: -5px;
+}
+#setting .switch input { 
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+#setting .switch_slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #ccc;
+
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+#setting .switch_slider:before {
+    content: "";
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+
+    -webkit-transition: all ease 0.4s;
+    -moz-transition: all ease 0.4s;
+    -ms-transition: all ease 0.4s;
+    -o-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+}
+#setting input:checked + .switch_slider {
+    background-color: #FFAA2B; 
+}
+#setting input:focus + .switch_slider {
+    box-shadow: 0 0 1px #FFAA2B;
+}
+#setting input:checked + .switch_slider:before {
+    -webkit-transform: translateX(22px);
+    -moz-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    -o-transform: translateX(22px);
+    transform: translateX(22px);
+}
+/* Rounded slide button */
+#setting .switch_slider.round {
+    border-radius: 30px;
+}
+#setting .switch_slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+/* ******************* Media Query ********************* */
+/* 태블릿 디바이스 (가로 해상도가 768px 보다 큰 화면에 적용) */
+@media (min-width: 768px) { 
+
+    /* font size */
+    #store_tab .store_tab_menu ul li a {
+        font-size: 2rem;
+    }
+    #store_tab .store_tab_content ul li h2 {
+        font-size: 1.8rem;
+    }
+    #store_tab .store_tab_content ul li .price1 {
+        font-size: 1.6rem;
+    }
+    #store_tab .store_tab_content ul li .price2 {
+        font-size: 1.8rem;
+    }
+    #profile_basic h2,
+    #profile_account h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
