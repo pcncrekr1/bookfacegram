@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>로그인</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- My CSS -->
+	<title>로그인</title>
+
+	<!-- My CSS -->
 	<link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -16,9 +17,9 @@
 
 <body>
 	<header id="header">
-        	<div>
-            	<h1><a href="new_books.html">BOOKPING</a></h1>
-        	</div>
+		<div>
+			<h1><a href="new_books.html">BOOKPING</a></h1>
+		</div>
     </header>
     <div id="login">
     	<div class="login_content">
@@ -30,30 +31,31 @@
 			</div>
 		</div>
 	</div>
-<script type="text/javascript">
 
 
-//<![CDATA[
-//사용할 앱의 JavaScript 키를 설정해 주세요.
-	Kakao.init('871b0eb9671cfa50ca537573d9a6da87');
+
+	<script type="text/javascript">
+	//<![CDATA[
+		//사용할 앱의 JavaScript 키를 설정해 주세요.
+		Kakao.init('871b0eb9671cfa50ca537573d9a6da87');
 
 		// 카카오 로그인 버튼을 생성합니다.
 		Kakao.Auth.createLoginButton({
-				container : '#kakao-login-btn',
-				success : function(authObj) {
+			container : '#kakao-login-btn',
+			success : function(authObj) {
 
 				// 로그인 성공시, API를 호출합니다.
 				Kakao.API.request({
 					url : '/v2/user/me',
 					success : function(res) {
 					
-					var kakao_userID = res.id; //유저의 카카오톡 고유 id
-					var kakao_userName = res.properties.nickname; //유저가 등록한 별명(이름)
+						var kakao_userID = res.id; //유저의 카카오톡 고유 id
+						var kakao_userName = res.properties.nickname; //유저가 등록한 별명(이름)
+						
+						//var userEmail = res.kaccount_email; //유저의 이메일
+						//var birthday = res.kaccout_birthday;
 					
-					//var userEmail = res.kaccount_email; //유저의 이메일
-					//var birthday = res.kaccout_birthday;
-					
-							window.location.replace("new_books.html?"+kakao_userName);
+						window.location.replace("new_books.html?" + kakao_userName);
 					},
 					fail : function(error) {
 						alert(JSON.stringify(error));
@@ -62,25 +64,22 @@
 			},
 			fail : function(err) {
 				alert(JSON.stringify(err));
-		}
-	});
+			}
+		});
+	//]]>
+	</script>
 
-//]]>
-</script>
-
-<!-- (3) LoginWithNaverId Javscript 설정 정보 및 초기화 -->
-			<script>
-			
-				var naver_id_login = new naver_id_login("nX0GheemtU7gT3NaIW5H",
-						"http://bookfacegram.com/bookfacegram/html/naver_callback.html");
-				var state = naver_id_login.getUniqState();
-				naver_id_login.setButton("green", 3,50);
-				naver_id_login.setDomain("http://bookfacegram.com/bookfacegram/html/login.html");
-				naver_id_login.setState(state);
-				naver_id_login.setPopup();
-				naver_id_login.init_naver_id_login();
-				
-			</script>
+	<!-- (3) LoginWithNaverId Javscript 설정 정보 및 초기화 -->
+	<script>
+		var naver_id_login = new naver_id_login("nX0GheemtU7gT3NaIW5H",
+				"http://bookfacegram.com/bookfacegram/html/naver_callback.html");
+		var state = naver_id_login.getUniqState();
+		naver_id_login.setButton("green", 3,50);
+		naver_id_login.setDomain("http://bookfacegram.com/bookfacegram/html/login.html");
+		naver_id_login.setState(state);
+		naver_id_login.setPopup();
+		naver_id_login.init_naver_id_login();
+	</script>
 
 </body>
 </html>
