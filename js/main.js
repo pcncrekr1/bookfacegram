@@ -15,27 +15,29 @@ $(function(){
     });
 
     $('.main_new_bx').bxSlider({
-        minSlides: 4,
+        minSlides: 3,
         maxSlides: 6,
         auto: false,
         pager: false,
         controls: false,
-        slideWidth: 1200,
+        slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
-        moveSlides: 1,
-        slideMargin: 10
+        moveSlides: 3,
+        slideMargin: 10,
+        shrinkItems: true
     });
 
     $('.main_kbs_bx').bxSlider({
-        minSlides: 4,
-        maxSlides: 6,
+        minSlides: 3,
+        maxSlides: 12,
         auto: false,
         pager: false,
         controls: false,
-        slideWidth: 1200,
+        slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
-        moveSlides: 1,
-        slideMargin: 10
+        moveSlides: 3,
+        slideMargin: 10,
+        shrinkItems: true
     });
 
 

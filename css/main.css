@@ -229,7 +229,7 @@ body {
 #tab .main_new_bx li,
 #tab .main_kbs_bx li {
     background: url(../images/main_page/new_books/new_book/background.png) no-repeat 0 0;
-    background-size: contain;
+    background-size: cover;
     padding: 5px;
 }
 #tab .main_new_bx li a,
@@ -312,7 +312,7 @@ body {
 #tab .my_famous_bx li,
 #tab .my_family_bx li {
     background: url(../images/main_page/new_books/new_book/background.png) no-repeat 0 0;
-    background-size: contain;
+    background-size: cover;
     padding: 5px;
 }
 #tab .my_self_bx li a > div,
