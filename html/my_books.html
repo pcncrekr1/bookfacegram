@@ -15,11 +15,31 @@
 </head>
 <body>
     <header id="header">
-        <div>
+        <div class="header_top">
             <a href="#" class="menu_left">
                 <img src="../images/menu_left/icon/menu_icon.png" alt="메뉴 아이콘">
             </a>
             <h1><a href="new_books.html">BOOKPING</a></h1>
+        </div>
+
+        <div id="search">
+            <div class="search_wrap">
+                <a href="#" class="camera_btn">
+                    <label for="camera"></label>
+                    <input type="file" id="camera" name="camera" capture="camera" accept="image/*"/>
+                </a>
+                <input type="text" name="input_search" class="input_search" id="inputSearch">
+                <a href="#" class="magnifier_btn">
+                    <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
+                </a>
+            </div>
+        </div>
+
+        <!-- tab menu -->
+        <div class="main_tab_menu">
+            <a href="new_books.html">NEW BOOKS</a>
+            <a href="my_books.html" class="main_tab_active">MY BOOKS</a>
+            <a href="activity.html">ACTIVITY</a>
         </div>
     </header>
 
@@ -44,30 +64,9 @@
         <div class="hidden_cover">
         </div>
     </div>
+    
 
-    
-    <div id="search">
-        <div class="search_wrap">
-            <a href="#" class="camera_btn">
-                <label for="camera"></label>
-                <input type="file" id="camera" name="camera" capture="camera" accept="image/*"/>
-            </a>
-            <input type="text" name="input_search" class="input_search" id="inputSearch">
-            <a href="#" class="magnifier_btn">
-                <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
-            </a>
-        </div>
-    </div>
-    
-    
     <div id="tab">
-        <!-- tab menu -->
-        <div class="main_tab_menu">
-            <a href="new_books.html">NEW BOOKS</a>
-            <a href="my_books.html" class="main_tab_active">MY BOOKS</a>
-            <a href="activity.html">ACTIVITY</a>
-        </div>
-
         <h2 class="custom_book_title"><span>PCNC_TT 님</span>을 위한 맞춤도서를 확인해보세요!</h2>
         <div class="radar_slider">
             <div><canvas id="radarChart1"></canvas></div>

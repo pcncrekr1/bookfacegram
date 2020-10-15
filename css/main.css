@@ -10,7 +10,6 @@ body {
 
 #header {
     width: 100%;
-    height: 40px;
 }
 #navi{
     width: 100%;
@@ -29,7 +28,7 @@ body {
 
 /* ************* 개별영역 구성 시작 ************** */
 /* header */
-#header > div {
+#header .header_top {
     width: 100%;
     height: 100%;
     padding: 10px 0 0 5%;
@@ -57,62 +56,6 @@ body {
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
-
-/* navi */
-#navi .gnb_hidden {
-    display: block;
-    width: 80%;
-    height: 100vh;
-    background-color: #fff;
-
-    -webkit-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
-    -moz-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
-    -o-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
-    -ms-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
-    box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
-    
-    position: fixed; 
-    left: -100%;
-    top: 0; 
-    z-index: 20;
-}
-#navi .gnb_hidden .user_yellow {
-    width: 100%;
-    height: 250px;
-    background-color: #FED500;
-    padding: 65px 0 0 20px;
-}
-#navi .gnb_hidden .user_yellow img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 35px;
-}
-#navi .gnb_hidden .user_yellow div {
-    font-size: 1.8rem;
-}
-
-#navi .gnb_hidden ul {
-    padding: 40px 0 0 20px;
-}
-#navi .gnb_hidden ul li {
-    margin-bottom: 25px;
-}
-#navi .gnb_hidden ul li a {
-    font-size: 2rem;
-}
-
-#navi .hidden_cover {
-    width: 100%;
-    height: 100vh;
-    position: fixed; 
-    left: -100%;
-    top: 0;
-    background-color: rgba(0,0,0,0);
-    cursor: pointer;
-    z-index: 10;
-}
-
 
 
 /* search */
@@ -174,12 +117,12 @@ body {
 
 
 
-/* tab menu */
-#tab .main_tab_menu {
+/* main tab menu */
+#header .main_tab_menu {
     width: 100%;
     height: 63px;
 }
-#tab .main_tab_menu a {
+#header .main_tab_menu a {
     display: inline-block;
     width: 32.5%;
     text-align: center;
@@ -188,7 +131,7 @@ body {
     font-size: 1.4rem;
     position: relative;
 }
-#tab .main_tab_menu a:hover::after{
+#header .main_tab_menu a:hover::after{
     content: '';
     display: block;
     width: 100%;
@@ -208,6 +151,62 @@ body {
     position: absolute;
     left: 0;
     bottom: 2px;
+}
+
+
+/* navi */
+#navi .gnb_hidden {
+    display: block;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+
+    -webkit-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    -moz-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    -o-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    -ms-box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    box-shadow: 5px 0 15px 1px rgba(204, 204, 204, 0.5);
+    
+    position: fixed; 
+    left: -100%;
+    top: 0; 
+    z-index: 20;
+}
+#navi .gnb_hidden .user_yellow {
+    width: 100%;
+    height: 250px;
+    background-color: #FED500;
+    padding: 65px 0 0 20px;
+}
+#navi .gnb_hidden .user_yellow img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 35px;
+}
+#navi .gnb_hidden .user_yellow div {
+    font-size: 1.8rem;
+}
+
+#navi .gnb_hidden ul {
+    padding: 40px 0 0 20px;
+}
+#navi .gnb_hidden ul li {
+    margin-bottom: 25px;
+}
+#navi .gnb_hidden ul li a {
+    font-size: 2rem;
+}
+
+#navi .hidden_cover {
+    width: 100%;
+    height: 100vh;
+    position: fixed; 
+    left: -100%;
+    top: 0;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    z-index: 10;
 }
 
 
