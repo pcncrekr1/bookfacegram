@@ -10,8 +10,7 @@ $(function(){
         slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 3,
-        slideMargin: 10,
-        shrinkItems: true
+        slideMargin: 10
     });
 
     var my_essay_bx = $('.my_essay_bx').bxSlider({
@@ -23,8 +22,7 @@ $(function(){
         slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 3,
-        slideMargin: 10,
-        shrinkItems: true
+        slideMargin: 10
     });
 
     var my_author_bx1 = $('.my_author_bx1').bxSlider({
@@ -36,8 +34,7 @@ $(function(){
         slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 3,
-        slideMargin: 10,
-        shrinkItems: true
+        slideMargin: 10
     });
 
     var my_author_bx2 = $('.my_author_bx2').bxSlider({
@@ -49,8 +46,7 @@ $(function(){
         slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 3,
-        slideMargin: 10,
-        shrinkItems: true
+        slideMargin: 10
     });
 
     var my_famous_bx = $('.my_famous_bx').bxSlider({
@@ -62,8 +58,7 @@ $(function(){
         slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 3,
-        slideMargin: 10,
-        shrinkItems: true
+        slideMargin: 10
     });
 
     var my_family_bx = $('.my_family_bx').bxSlider({
@@ -75,8 +70,7 @@ $(function(){
         slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 3,
-        slideMargin: 10,
-        shrinkItems: true
+        slideMargin: 10
     });
 
 
