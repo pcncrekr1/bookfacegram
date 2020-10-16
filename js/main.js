@@ -8,7 +8,7 @@ $(function(){
         auto: true,
         pager: true,
         controls: false,
-        slideWidth: 1200,
+        slideWidth: 1097,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 1,
         slideMargin: 0
@@ -23,8 +23,7 @@ $(function(){
         slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 3,
-        slideMargin: 10,
-        shrinkItems: true
+        slideMargin: 10
     });
 
     $('.main_kbs_bx').bxSlider({
@@ -36,8 +35,7 @@ $(function(){
         slideWidth: 200,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 3,
-        slideMargin: 10,
-        shrinkItems: true
+        slideMargin: 10
     });
 
 

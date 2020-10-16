@@ -10,6 +10,7 @@ body {
 
 #header {
     width: 100%;
+    background-color: #fff;
 }
 #navi{
     width: 100%;
@@ -56,24 +57,14 @@ body {
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
-
-
-/* search */
-#search .search_wrap {
-    width: 90%;
-    height: 100%;
-    background-color: #FAFAFA;
-    margin: 0 auto;
-    position: relative;
-}
-#search .search_wrap .camera_btn {
-    width: 35px;
-    height: 30px;
+#header .camera_btn {
+    width: 30px;
+    height: 23px;
     position: absolute;
-    top: 5px;
-    left: 0;
+    right: 5%;
+    top: 13px;
 }
-#search .search_wrap .camera_btn label {
+#header .camera_btn label {
     width: 100%;
     height: 100%; 
     display: inline-block;
@@ -81,7 +72,7 @@ body {
     background: url(../images/main_page/search/camera.png) no-repeat 0 0;
     background-size: cover;
 } 
-#search .search_wrap .camera_btn input[type="file"] { /* 파일 필드 숨기기 */ 
+#header .camera_btn input[type="file"] { /* 파일 필드 숨기기 */ 
     position: absolute; 
     width: 1px; 
     height: 1px; 
@@ -91,6 +82,21 @@ body {
     clip:rect(0,0,0,0); 
     border: 0; 
 }
+/* 헤더 고정용 클래스 */
+/* .header_fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+} */
+/* search */
+#search .search_wrap {
+    width: 90%;
+    height: 100%;
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    position: relative;
+}
 #search .search_wrap .input_search {
     width: 90%;
     height: 100%;
@@ -98,7 +104,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 0;
 }
 #search .search_wrap .input_search:focus {
     outline:none;
@@ -114,13 +120,11 @@ body {
     width: 100%;
     height: 100%;
 }
-
-
-
 /* main tab menu */
 #header .main_tab_menu {
     width: 100%;
     height: 63px;
+    padding: 0 5%;
 }
 #header .main_tab_menu a {
     display: inline-block;
@@ -152,6 +156,7 @@ body {
     left: 0;
     bottom: 2px;
 }
+
 
 
 /* navi */
@@ -223,6 +228,8 @@ body {
     padding: 0 5%;
 }
 #tab .main_tab_content .main_banner_wrap {
+    width: 90%;
+    margin: 0 5%;
     padding: 0;
 }
 #tab .main_new_bx li,
