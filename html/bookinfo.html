@@ -11,40 +11,100 @@
 
 </head>
 <body>
-    <header id="header">
+    <!-- <header id="header">
         <div>
             <a href="new_books.html" class="back">
                 <img src="../images/menu_left/icon/back.png" alt="뒤로가기 아이콘">
             </a>
             <h1><a href="new_books.html">BOOKPING</a></h1>
         </div>
+    </header> -->
+
+    <header id="header">
+        <div class="header_top">
+            <a href="#" class="menu_left">
+                <img src="../images/menu_left/icon/menu_icon.png" alt="메뉴 아이콘">
+            </a>
+            <h1><a href="new_books.html">BOOKPING</a></h1>
+            <a href="#" class="camera_btn">
+                <label for="camera"></label>
+                <input type="file" id="camera" name="camera" accept="image/*"/>
+            </a>
+        </div>
+
+        <div id="search">
+            <div class="search_wrap">
+                <input type="text" name="input_search" class="input_search" id="inputSearch">
+                <a href="#" class="magnifier_btn">
+                    <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
+                </a>
+            </div>
+        </div>
+
+        <!-- tab menu -->
+        <div class="main_tab_menu">
+            <a href="new_books.html" class="main_tab_active">NEW BOOKS</a>
+            <a href="my_books.html">MY BOOKS</a>
+            <a href="activity.html">ACTIVITY</a>
+        </div>
     </header>
 
-    <div id="bookInfo" class="clearfix">
-        <div class="left_box">
-            <img src="../images/main_page/new_books/new_book/book9_detail.jpg" alt="도시농부 송아의 관찰일기 책 표지">
+    <div id="navi">
+        <div class="gnb_hidden">
+            <div class="user_yellow">
+                <img src="../images/menu_left/icon/user.png" alt="프로필 사진">
+                <div><strong id="id_name"></strong> 님</div>
+            </div>
+            <ul>
+                <li><a href="notice.html">ㆍ공지사항</a></li>
+                <li><a href="event.html">ㆍ이벤트</a></li>
+                <li><a href="bookdrawer.html">ㆍ책 서랍</a></li>
+                <li><a href="store.html">ㆍ북핑스토어</a></li>
+                <li><a href="profile.html">ㆍ개인정보수정</a></li>
+                <li><a href="faq.html">ㆍ도움말</a></li>
+                <li><a href="setting.html">ㆍ앱설정</a></li>
+            </ul>
         </div>
-        <div class="right_box">
-            <div class="deco_text">
-                (준)4급(초등3ㆍ4학년) 선정도서
-            </div>
-            <h2>도시농부 송아의 관찰일기</h2>
-            <div class="writer"><span>글</span>여태동</div>
-            <div class="subject"><span>주제</span>도시농부가 되어 농사를 지어요!</div>
-            <div class="button_box">
-                <button>MY BOOK 담기 ♡</button>
-                <button>북핑톡 나누기 ▷</button>
-            </div>
-            <button>독서퀴즈 바로가기 →</button>
+
+        <!-- gnb_hidden 투명 배경 -->
+        <div class="hidden_cover">
         </div>
     </div>
 
-    <div id="review">
-        <h3>출판사 리뷰</h3>
-        <p>
-            이 책은 도시에 살며 유기농법으로 가치농사를 지은 아빠와 딸의 기록입니다. 아빠와 딸, 두 도시농부는 봄부터 겨울까지 허리를 굽히고, 땀을 뻘뻘 흘리며 농사를 지으면서 '왜 농사를 짓는가?'라는 물음을 가집니다. 도시농부로 살아오면서 농사를 배우기도 했지만 작물들, 밭의 곤충들, 새들 등 소중한 생명들과 대화하는 시간을 가졌다는 것에 더 큰 보람을 느낍니다. 이 책과의 인연으로 '아빠와 송아'와 같이 많은 도시농부가 생겨 계절마다 많은 작물을 만나며 생명의 경이로움을 느꼈으면 좋겠습니다.
-        </p>
+    <div id="tab">
+        <div id="bookInfo" class="clearfix">
+            <div class="left_box">
+                <img src="../images/main_page/new_books/new_book/book9_detail.jpg" alt="도시농부 송아의 관찰일기 책 표지">
+            </div>
+            <div class="right_box">
+                <div class="deco_text">
+                    (준)4급(초등3ㆍ4학년) 선정도서
+                </div>
+                <h2>도시농부 송아의 관찰일기</h2>
+                <div class="writer"><span>글</span>여태동</div>
+                <div class="subject"><span>주제</span>도시농부가 되어 농사를 지어요!</div>
+                <div class="button_box">
+                    <button>MY BOOK 담기 ♡</button>
+                    <button>북핑톡 나누기 ▷</button>
+                </div>
+                <button>독서퀴즈 바로가기 →</button>
+            </div>
+        </div>
+
+        <div id="review">
+            <h3>출판사 리뷰</h3>
+            <p>
+                이 책은 도시에 살며 유기농법으로 가치농사를 지은 아빠와 딸의 기록입니다. 아빠와 딸, 두 도시농부는 봄부터 겨울까지 허리를 굽히고, 땀을 뻘뻘 흘리며 농사를 지으면서 '왜 농사를 짓는가?'라는 물음을 가집니다. 도시농부로 살아오면서 농사를 배우기도 했지만 작물들, 밭의 곤충들, 새들 등 소중한 생명들과 대화하는 시간을 가졌다는 것에 더 큰 보람을 느낍니다. 이 책과의 인연으로 '아빠와 송아'와 같이 많은 도시농부가 생겨 계절마다 많은 작물을 만나며 생명의 경이로움을 느꼈으면 좋겠습니다.
+            </p>
+        </div>
     </div>
+
+    
+    <!-- jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- My JS -->
+    <script src="../js/main2.js"></script>
 
 </body>
 </html>

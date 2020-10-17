@@ -11,66 +11,119 @@
 
 </head>
 <body>
-    <header id="header">
+    <!-- <header id="header">
         <div>
             <a href="bookcontest.html" class="back">
                 <img src="../images/menu_left/icon/back.png" alt="뒤로가기 아이콘">
             </a>
             <h1><a href="new_books.html">BOOKPING</a></h1>
         </div>
+    </header> -->
+    
+    <header id="header">
+        <div class="header_top">
+            <a href="#" class="menu_left">
+                <img src="../images/menu_left/icon/menu_icon.png" alt="메뉴 아이콘">
+            </a>
+            <h1><a href="new_books.html">BOOKPING</a></h1>
+            <a href="#" class="camera_btn">
+                <label for="camera"></label>
+                <input type="file" id="camera" name="camera" accept="image/*"/>
+            </a>
+        </div>
+
+        <div id="search">
+            <div class="search_wrap">
+                <input type="text" name="input_search" class="input_search" id="inputSearch">
+                <a href="#" class="magnifier_btn">
+                    <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
+                </a>
+            </div>
+        </div>
+
+        <!-- tab menu -->
+        <div class="main_tab_menu">
+            <a href="new_books.html">NEW BOOKS</a>
+            <a href="my_books.html">MY BOOKS</a>
+            <a href="activity.html" class="main_tab_active">ACTIVITY</a>
+        </div>
     </header>
 
-    <div id="form_content">
-        <form action="bookcontest3.html">
-            <fieldset>
-                <legend>공모전 응모하기</legend>
-                <div class="form_group">
-                    <label for="grade">학년</label>
-                    <select name="grade" id="grade">
-                        <option value="초1">초1</option>
-                        <option value="초2">초2</option>
-                        <option value="초3">초3</option>
-                        <option value="초4">초4</option>
-                        <option value="초5">초5</option>
-                        <option value="초6">초6</option>
-                    </select>
-                </div>
-                <div class="form_group">
-                    <label for="book_name">도서</label>
-                    <select name="book_name" id="book_name">
-                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
-                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
-                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
-                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
-                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
-                        <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
-                    </select>
-                </div>
-                <div class="form_group">
-                    <label for="subject">제목</label>
-                    <input type="text" name="subject" id="subject" value="'초콜릿어 할 줄 알아?'를 읽고......">
-                </div>
-                <div class="form_group">
-                    <label for="book_content">내용</label>
-                    <textarea name="book_content" id="book_content" cols="30" rows="10">'초콜릿어 할 줄 알아?'를 읽어보았습니다.
-난독증 영국 소녀와 시리아 난민 소녀가 언어장벽을 뛰어넘고 서로 공감하고 우정을 나누는 것을 보며 큰 감명을 받았습니다.
+    <div id="navi">
+        <div class="gnb_hidden">
+            <div class="user_yellow">
+                <img src="../images/menu_left/icon/user.png" alt="프로필 사진">
+                <div><strong>PCNC_TT</strong>님</div>
+            </div>
+            <ul>
+                <li><a href="notice.html">ㆍ공지사항</a></li>
+                <li><a href="event.html">ㆍ이벤트</a></li>
+                <li><a href="bookdrawer.html">ㆍ책 서랍</a></li>
+                <li><a href="store.html">ㆍ북핑스토어</a></li>
+                <li><a href="profile.html">ㆍ개인정보수정</a></li>
+                <li><a href="faq.html">ㆍ도움말</a></li>
+                <li><a href="setting.html">ㆍ앱설정</a></li>
+            </ul>
+        </div>
+
+        <!-- gnb_hidden 투명 배경 -->
+        <div class="hidden_cover">
+        </div>
+    </div>
+
+    <div id="tab">
+        <div id="form_content">
+            <form action="bookcontest3.html">
+                <fieldset>
+                    <legend>공모전 응모하기</legend>
+                    <div class="form_group">
+                        <label for="grade">학년</label>
+                        <select name="grade" id="grade">
+                            <option value="초1">초1</option>
+                            <option value="초2">초2</option>
+                            <option value="초3">초3</option>
+                            <option value="초4">초4</option>
+                            <option value="초5">초5</option>
+                            <option value="초6">초6</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <label for="book_name">도서</label>
+                        <select name="book_name" id="book_name">
+                            <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                            <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                            <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                            <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                            <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                            <option value="초콜릿어 할 줄 알아?">초콜릿어 할 줄 알아?</option>
+                        </select>
+                    </div>
+                    <div class="form_group">
+                        <label for="subject">제목</label>
+                        <input type="text" name="subject" id="subject" value="'초콜릿어 할 줄 알아?'를 읽고......">
+                    </div>
+                    <div class="form_group">
+                        <label for="book_content">내용</label>
+                        <textarea name="book_content" id="book_content" cols="30" rows="10">'초콜릿어 할 줄 알아?'를 읽어보았습니다.
+    난독증 영국 소녀와 시리아 난민 소녀가 언어장벽을 뛰어넘고 서로 공감하고 우정을 나누는 것을 보며 큰 감명을 받았습니다.
 
 
-해당 독후감 파일은 함께 첨부하여 업로드합니다.
+    해당 독후감 파일은 함께 첨부하여 업로드합니다.
 
 
-감사합니다.
-                    </textarea>
-                </div>
-                <span class="file_label_replace">파일</span>
-                <div class="filebox bs3-primary">
-                    <input class="upload-name" value="파일선택" disabled="disabled">
-                    <label for="ex_filename">찾기</label> 
-                    <input type="file" id="ex_filename" class="upload-hidden"> 
-                </div>
-                <input type="submit" value="등록" class="contest_submit">
-            </fieldset>
-        </form>
+    감사합니다.
+                        </textarea>
+                    </div>
+                    <span class="file_label_replace">파일</span>
+                    <div class="filebox bs3-primary">
+                        <input class="upload-name" value="파일선택" disabled="disabled">
+                        <label for="ex_filename">찾기</label> 
+                        <input type="file" id="ex_filename" class="upload-hidden"> 
+                    </div>
+                    <input type="submit" value="등록" class="contest_submit">
+                </fieldset>
+            </form>
+        </div>
     </div>
 
 

@@ -10,7 +10,12 @@ body {
 
 #header {
     width: 100%;
+    height: 177px;
     background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 #navi{
     width: 100%;
@@ -23,6 +28,7 @@ body {
 #tab {
     width: 100%;
     height: 100%;
+    margin-top: 177px;
 }
 
 
@@ -31,7 +37,6 @@ body {
 /* header */
 #header .header_top {
     width: 100%;
-    height: 100%;
     padding: 10px 0 0 5%;
     position: relative;
 }
@@ -82,13 +87,6 @@ body {
     clip:rect(0,0,0,0); 
     border: 0; 
 }
-/* 헤더 고정용 클래스 */
-/* .header_fix {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-} */
 /* search */
 #search .search_wrap {
     width: 90%;
@@ -156,9 +154,6 @@ body {
     left: 0;
     bottom: 2px;
 }
-
-
-
 /* navi */
 #navi .gnb_hidden {
     display: block;
@@ -255,7 +250,8 @@ body {
 
 #tab .custom_book_title {
     font-size: 1.4rem;
-    margin: 20px 0 20px 5%;
+    margin: 0 0 20px 5%;
+    padding-top: 20px;
 }
 
 /* my_books tab */
@@ -339,7 +335,8 @@ body {
 /* activity tab */
 #tab .progress_title {
     font-size: 1.4rem;
-    margin: 20px 0 20px 5%;
+    margin: 0 0 20px 5%;
+    padding-top: 20px;
 }
 #tab .circle_progress {
     position: relative;
