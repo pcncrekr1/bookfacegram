@@ -210,7 +210,7 @@ body {
 }
 
 
-/* tab contents */
+/* ************* new books tab *************** */
 #tab .main_tab_content h2 {
     font-size: 1.5rem;
 }
@@ -294,13 +294,41 @@ body {
     font-size: 1.3rem;
 }
 
+/* new_book_list */
+#tab .list_title_box {
+    width: 100%;
+    padding: 40px 5%;
+}
+#tab .list_title_box h2 {
+    width: 100%;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+#tab .book_list_wrap {
+    width: 100%;
+    padding: 0 5%;
+}
+#tab .book_list_wrap ul {
+    width: 100%;
+    height: 100%;
+}
+#tab .book_list_wrap ul li {
+    width: 100%;
+}
+#tab .book_list_wrap .book_box {
+    float: left;
+}
+#tab .book_list_wrap .button_box{
+    float: right;
+}
+
+
+/* ************* my_books tab *************** */
 #tab .custom_book_title {
     font-size: 1.4rem;
     margin: 0 0 20px 5%;
     padding-top: 20px;
 }
-
-/* my_books tab */
 #tab .my_tab_menu {
     width: 100%;
     height: 42px;
@@ -378,7 +406,8 @@ body {
 }
 
 
-/* activity tab */
+
+/* ************* activity tab *************** */
 #tab .progress_title {
     font-size: 1.4rem;
     margin: 0 0 20px 5%;
