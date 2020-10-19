@@ -130,7 +130,7 @@ body {
     text-align: center;
     line-height: 63px;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     position: relative;
 }
 #header .main_tab_menu a:hover::after{
@@ -212,7 +212,7 @@ body {
 
 /* tab contents */
 #tab .main_tab_content h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 #tab .main_tab_content h2 .kbs_span {
     color: #0B5EAA;
@@ -240,14 +240,15 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
-    margin: 20px 0 10px 0;
+    margin: 40px 0 10px 0;
 }
 #tab .main_tab_content .book_title_box h2 {
     width: 100%;
 }
 #tab .main_tab_content .book_title_box a {
     display: block;
-    width: 80px;
+    width: 65px;
+    font-size: 1.2rem;
 }
 #tab .main_tab_content > div {
     padding: 0 5%;
@@ -255,7 +256,7 @@ body {
 #tab .main_tab_content .main_banner_wrap {
     width: 90%;
     margin: 0 5%;
-    padding: 0;
+    padding: 20px 0 0 0;
 }
 #tab .main_new_bx li,
 #tab .main_kbs1_slide li,
@@ -290,7 +291,7 @@ body {
     white-space: nowrap;
     word-wrap: normal;
     overflow: hidden;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 #tab .custom_book_title {
