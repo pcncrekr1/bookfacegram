@@ -130,7 +130,7 @@ body {
     text-align: center;
     line-height: 63px;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     position: relative;
 }
 #header .main_tab_menu a:hover::after{
@@ -212,13 +212,43 @@ body {
 
 /* tab contents */
 #tab .main_tab_content h2 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
 }
-#tab .main_tab_content .kbs_title span {
-    color: #E86644;
+#tab .main_tab_content h2 .kbs_span {
+    color: #0B5EAA;
 }
-#tab .main_tab_content h2,
+#tab .main_tab_content h2 .class1_span {
+    color: #E66D1E;
+}
+#tab .main_tab_content h2 .class2_span {
+    color: #0E96AC;
+}
+#tab .main_tab_content h2 .class3_span {
+    color: #CA275C;
+}
+#tab .main_tab_content h2 .class4_span {
+    color: #ED841B;
+}
+#tab .main_tab_content h2 .class5_span {
+    color: #5A7411;
+}
+#tab .main_tab_content h2 .class_child_span {
+    color: #760A9C;
+}
+#tab .main_tab_content .book_title_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin: 20px 0 10px 0;
+}
+#tab .main_tab_content .book_title_box h2 {
+    width: 100%;
+}
+#tab .main_tab_content .book_title_box a {
+    display: block;
+    width: 80px;
+}
 #tab .main_tab_content > div {
     padding: 0 5%;
 }
@@ -228,24 +258,39 @@ body {
     padding: 0;
 }
 #tab .main_new_bx li,
-#tab .main_kbs_bx li {
+#tab .main_kbs1_slide li,
+#tab .main_kbs2_slide li,
+#tab .main_kbs3_slide li,
+#tab .main_kbs4_slide li,
+#tab .main_kbs5_slide li,
+#tab .main_kbs_child_slide li {
     background: url(../images/main_page/new_books/new_book/background.png) no-repeat 0 0;
     background-size: cover;
     padding: 5px;
 }
 #tab .main_new_bx li a,
-#tab .main_kbs_bx li a {
+#tab .main_kbs1_slide li a,
+#tab .main_kbs2_slide li a,
+#tab .main_kbs3_slide li a,
+#tab .main_kbs4_slide li a,
+#tab .main_kbs5_slide li a,
+#tab .main_kbs_child_slide li a {
     width: 100%;
     height: 100%;
 }
 #tab .main_new_bx li a > div,
-#tab .main_kbs_bx li a > div {
+#tab .main_kbs1_slide li a > div,
+#tab .main_kbs2_slide li a > div,
+#tab .main_kbs3_slide li a > div,
+#tab .main_kbs4_slide li a > div,
+#tab .main_kbs5_slide li a > div,
+#tab .main_kbs_child_slide li a > div {
     margin-top: 10px;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-    word-wrap:normal;
-    overflow:hidden;
-    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    font-size: 1.4rem;
 }
 
 #tab .custom_book_title {
@@ -412,7 +457,12 @@ body {
 /* 태블릿 디바이스 (가로 해상도가 768px 보다 큰 화면에 적용) */
 @media (min-width: 768px) { 
     #tab .main_new_bx li,
-    #tab .main_kbs_bx li,
+    #tab .main_kbs1_slide li,
+    #tab .main_kbs2_slide li,
+    #tab .main_kbs3_slide li,
+    #tab .main_kbs4_slide li,
+    #tab .main_kbs5_slide li,
+    #tab .main_kbs_child_slide li,
     #tab .my_self_bx li,
     #tab .my_essay_bx li,
     #tab .my_author_bx1 li,
@@ -444,7 +494,12 @@ body {
         font-size: 1.8rem;
     }
     #tab .main_new_bx li a > div,
-    #tab .main_kbs_bx li a > div {
+    #tab .main_kbs1_slide li a > div,
+    #tab .main_kbs2_slide li a > div,
+    #tab .main_kbs3_slide li a > div,
+    #tab .main_kbs4_slide li a > div,
+    #tab .main_kbs5_slide li a > div,
+    #tab .main_kbs_child_slide li a > div {
         font-size: 1.4rem;
     }
     

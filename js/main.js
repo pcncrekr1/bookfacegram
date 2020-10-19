@@ -26,7 +26,67 @@ $(function(){
         slideMargin: 10
     });
 
-    $('.main_kbs_bx').bxSlider({
+    $('.main_kbs1_slide').bxSlider({
+        minSlides: 3,
+        maxSlides: 5,
+        auto: false,
+        pager: false,
+        controls: false,
+        slideWidth: 200,
+        touchEnabled : (navigator.maxTouchPoints > 0),
+        moveSlides: 3,
+        slideMargin: 10
+    });
+
+    $('.main_kbs2_slide').bxSlider({
+        minSlides: 3,
+        maxSlides: 8,
+        auto: false,
+        pager: false,
+        controls: false,
+        slideWidth: 200,
+        touchEnabled : (navigator.maxTouchPoints > 0),
+        moveSlides: 3,
+        slideMargin: 10
+    });
+
+    $('.main_kbs3_slide').bxSlider({
+        minSlides: 3,
+        maxSlides: 12,
+        auto: false,
+        pager: false,
+        controls: false,
+        slideWidth: 200,
+        touchEnabled : (navigator.maxTouchPoints > 0),
+        moveSlides: 3,
+        slideMargin: 10
+    });
+
+    $('.main_kbs4_slide').bxSlider({
+        minSlides: 3,
+        maxSlides: 12,
+        auto: false,
+        pager: false,
+        controls: false,
+        slideWidth: 200,
+        touchEnabled : (navigator.maxTouchPoints > 0),
+        moveSlides: 3,
+        slideMargin: 10
+    });
+
+    $('.main_kbs5_slide').bxSlider({
+        minSlides: 3,
+        maxSlides: 12,
+        auto: false,
+        pager: false,
+        controls: false,
+        slideWidth: 200,
+        touchEnabled : (navigator.maxTouchPoints > 0),
+        moveSlides: 3,
+        slideMargin: 10
+    });
+
+    $('.main_kbs_child_slide').bxSlider({
         minSlides: 3,
         maxSlides: 12,
         auto: false,
