@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookfacegram</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="header_top">
+            <a href="#" class="menu_left">
+                <img src="../images/menu_left/icon/menu_icon.png" alt="메뉴 아이콘">
+            </a>
+            <h1><a href="new_books.html">BOOKPING</a></h1>
+            <a href="#" class="camera_btn">
+                <label for="camera"></label>
+                <input type="file" id="camera" name="camera" accept="image/*"/>
+            </a>
+        </div>
+
+        <div id="search">
+            <div class="search_wrap">
+                <input type="text" name="input_search" class="input_search" id="inputSearch">
+                <a href="#" class="magnifier_btn">
+                    <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
+                </a>
+            </div>
+        </div>
+
+        <!-- tab menu -->
+        <div class="main_tab_menu">
+            <a href="new_books.html" class="main_tab_active">NEW BOOKS</a>
+            <a href="my_books.html">MY BOOKS</a>
+            <a href="activity.html">ACTIVITY</a>
+        </div>
+    </header>
+
+    <div id="navi">
+        <div class="gnb_hidden">
+            <div class="user_yellow">
+                <img src="../images/menu_left/icon/user.png" alt="프로필 사진">
+                <div><strong id="id_name"></strong> 님</div>
+            </div>
+            <ul>
+                <li><a href="notice.html">ㆍ공지사항</a></li>
+                <li><a href="event.html">ㆍ이벤트</a></li>
+                <li><a href="bookdrawer.html">ㆍ책 서랍</a></li>
+                <li><a href="store.html">ㆍ북핑스토어</a></li>
+                <li><a href="profile.html">ㆍ개인정보수정</a></li>
+                <li><a href="faq.html">ㆍ도움말</a></li>
+                <li><a href="setting.html">ㆍ앱설정</a></li>
+            </ul>
+        </div>
+
+        <!-- gnb_hidden 투명 배경 -->
+        <div class="hidden_cover">
+        </div>
+    </div>
+    
+    
+    <div id="tab">
+        <div class="book_like_wrap">
+            <img src="../images/main_page/new_books/book_detail/book1.jpg" alt="존리의 부자되기 습관">
+            <h2>존리의 부자되기 습관</h2>
+        </div>
+
+        <!-- detail tab menu -->
+        <div class="detail_tab_menu">
+            <ul>
+                <li><a href="#" class="detail_tab_active">도서소개</a></li>
+                <li><a href="#">독서퀴즈</a></li>
+                <li><a href="#">북핑톡</a></li>
+            </ul>
+        </div>
+
+        <!-- detail tab content -->
+        <div class="tab_detail_info">
+            <ul>
+                <li>
+                    <div class="summary_title_box">
+                        <h3>저자 | 존리</h3>
+                        <h3>출판사 | 지식노마드</h3>
+                        <h3>출판년도 | 2020.01.15</h3>
+                    </div>
+                    <div class="summary_content">
+                        한국 사회에 만연한 그릇된 소비행태는 한국 사람들이 돈에 대해 잘못 알고 있는 탓에 형성된 것이다. 바로 열심히 일하고 저축해도 부자가 되기는 불가능하다고 생각하고 포기하기 때문이다. 그러나 부자의 길은 사실 놀라울 정도로 가까운 데 있다. 생각만 바꾸면 된다. 과도한 소비를 투자로 바꾸는 라이프스타일로 전환하기만 해도 기적이 일어난다. 바로 복리의 마법 때문이다. 아인슈타인이 8번째 불가사의라 칭한 복리의 마법이 당신을 부자로 만들어줄 것이다. 기억하라.
+                    </div>
+                    <div class="extend_box">
+                        <img src="../images/menu_left/icon/angle_down.png" alt="">자세히
+                    </div>
+                </li>
+                <li>
+                    <h3>저자소개</h3>
+                    <div class="summary_content">
+                        아무도 눈여겨보지 않았던 수익률 최하위 회사를 취임 2년 만에 선두그룹 회사로 탈바꿈시키면서 금융 투자업계에 돌풍을 일으키고 있는 메리츠자산운용사의 대표이사다. 80년대 초 연세대 경제학과를 자퇴하고, 미국으로 건너가 뉴욕대(New York University) 회계학과를 졸업했다. 그 후 KPMG의 전신인 피트마윅(Peat Marwick) 에서 회계사로 일하다, 미국 투자회사인 스커더 스티븐스 앤드 크락(Scudder Stevens & Clark)으로 옮겨 코리아펀드를 운용하면서 월가의 스타 펀드매니저로 알려지기 시작했다.
+                    </div>
+                    <div class="extend_box">
+                        <img src="../images/menu_left/icon/angle_down.png" alt="">자세히
+                    </div>
+                </li>
+                <li>
+                    <h3>출판사 서평</h3>
+                    <div class="summary_content">
+                        한국인들은 세계 어느 나라보다 머리가 좋을 뿐 아니라 성실하며 더 근면하게 일한다. 2019년 통계청 발표에 의하면 미국과 일본의 근로자보다 연간 200시간을 더 일한다. 그럼에도 OECD 노인 빈곤율 세계 1위, 노인 자살률 1위의 나라이다. 왜 이렇게 되었는가?
+                        저자는 돈에 대해 배우지 않았기 때문이라고 단언한다. 자본주의 사회에 살고 있음에도 자본이 일하게 하는 시스템을 이해하지 못하고 돈으로부터 멀어지는 삶을 살고 있기 떄문이라고 말한다.
+                    </div>
+                    <div class="extend_box">
+                        <img src="../images/menu_left/icon/angle_down.png" alt="">자세히
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab_detail_quiz">
+            <p>
+                해당 도서는 독서퀴즈 서비스가 제공되지 않습니다.
+            </p>
+        </div>
+
+        <div class="tab_detail_talk">
+            <div class="thumb_box">
+                <img src="../images/main_page/new_books/book_detail/recommend.png" alt="엄지 별점 추천">
+                <img src="../images/main_page/new_books/book_detail/recommend.png" alt="엄지 별점 추천">
+                <img src="../images/main_page/new_books/book_detail/recommend.png" alt="엄지 별점 추천">
+                <img src="../images/main_page/new_books/book_detail/recommend.png" alt="엄지 별점 추천">
+                <img src="../images/main_page/new_books/book_detail/recommend.png" alt="엄지 별점 추천">
+            </div>
+
+            <form action="../html/book_detail.html">
+                <textarea name="bookping_talk_area" id="bookpingTalkArea" cols="30" rows="10"></textarea>
+                <input type="submit" value="등록" class="bookping_talk_submit">
+            </form>
+            
+            <ul>
+                <li>
+                    <div class="id_date_box">
+                        <div>피치못할피치:D</div>
+                        <div>2020.09.06.</div>
+                    </div>
+                    <div class="talk_content">
+                        부자가 되기 위해 사소한 습관부터 하나씩 고쳐봐야겠다는 생각이 들었고, 저를 한 번 되돌아볼 수 있는 시간이 되어 좋았습니다^^
+                    </div>
+                    <div class="hashtag_box">
+                        #존리 #존리의부자되는습관 #부자를꿈꾼다 #부자되기_도전! #로또당첨
+                    </div>
+                </li>
+                <li>
+                    <div class="id_date_box">
+                        <div>자두자두졸령</div>
+                        <div>2020.09.04.</div>
+                    </div>
+                    <div class="talk_content">
+                        부자되고싶다아아아아아 요즘 티비에 자주 보이시는 존리님! 궁금해서 읽어봤는데, 너무 재밌었어요~
+                    </div>
+                    <div class="hashtag_box">
+                        #존리 #부자 #독서 #책읽기습관 #저축
+                    </div>
+                </li>
+                <li>
+                    <div class="id_date_box">
+                        <div>아네모네세모네</div>
+                        <div>2020.09.01.</div>
+                    </div>
+                    <div class="talk_content">
+                        괜히 베스트셀러가 아니네요! 재밌는데 제가 과연 지킬 수 있을지 ㅠ_ㅠ
+                    </div>
+                    <div class="hashtag_box">
+                        #부자되는법 #부자되는습관 #존리 #책추천
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
