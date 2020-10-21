@@ -39,5 +39,68 @@ $(function(){
         // 추출한 파일명 삽입 
         $(this).siblings('.upload-name').val(filename); 
     });
-    
+
+
+
+    // book detail tab show & hide
+    var info_btn = $('.detail_tab_menu ul li:first-child a');
+    var quiz_btn = $('.detail_tab_menu ul li:nth-child(2) a');
+    var talk_btn = $('.detail_tab_menu ul li:last-child a');
+    var tab_detail_info = $('.tab_detail_info');
+    var tab_detail_quiz = $('.tab_detail_quiz');
+    var tab_detail_talk = $('.tab_detail_talk');
+
+    // 초기값 설정
+    info_btn.addClass("detail_tab_active");
+    tab_detail_info.css("display", "block");
+
+    info_btn.click(function(){
+        info_btn.addClass('detail_tab_active');
+        quiz_btn.removeClass('detail_tab_active');
+        talk_btn.removeClass('detail_tab_active');
+        tab_detail_info.css('display', 'block');
+        tab_detail_quiz.css('display', 'none');
+        tab_detail_talk.css('display', 'none');
+        
+        event.preventDefault();
+    });
+    quiz_btn.click(function(){
+        info_btn.removeClass('detail_tab_active');
+        quiz_btn.addClass('detail_tab_active');
+        talk_btn.removeClass('detail_tab_active');
+        tab_detail_info.css('display', 'none');
+        tab_detail_quiz.css('display', 'block');
+        tab_detail_talk.css('display', 'none');
+
+        event.preventDefault();
+    });
+    talk_btn.click(function(){
+        info_btn.removeClass('detail_tab_active');
+        quiz_btn.removeClass('detail_tab_active');
+        talk_btn.addClass('detail_tab_active');
+        tab_detail_info.css('display', 'none');
+        tab_detail_quiz.css('display', 'none');
+        tab_detail_talk.css('display', 'block');
+
+        event.preventDefault();
+    });
+
+
+
+    // extend button click
+    var more_btn = $("#tab .tab_detail_info ul li .extend_box img");
+    var extend_btn = $("#tab .tab_detail_info ul li .extend_box a");
+    extend_btn.click(function () { 
+        $(this).parent().siblings(".summary_content").toggleClass("extend_toggle");
+
+        $(this).parent().parent().find(".extend_box a img").attr("src", function(index, attr){ 
+            if (attr.match('up')) { 
+                return attr.replace("up", "down"); 
+            } else { 
+                return attr.replace("down", "up"); 
+            } 
+        });
+
+        event.preventDefault();
+    });
 });

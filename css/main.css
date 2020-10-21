@@ -428,30 +428,33 @@ body {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-/* 탭 활성화 클래스 */
+/* 탭메뉴 활성화 클래스 */
 .detail_tab_active {
     color: #000 !important;
 }
 .detail_tab_active::after{
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #000;
+    content: '' !important;
+    display: block !important;
+    width: 60px !important;
+    height: 3px !important;
+    background-color: #000 !important;
 
-    position: absolute; left: 50%; bottom: 0;
+    position: absolute !important; 
+    left: 50% !important; 
+    bottom: 0 !important;
     
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) !important;
+    -moz-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
 }
+
 /* tab content */
 #tab .tab_detail_info,
 #tab .tab_detail_quiz,
 #tab .tab_detail_talk {
-    /* display: none; */
+    display: none;
     padding: 0 5%;
 }
 #tab .tab_detail_info ul {
@@ -471,6 +474,12 @@ body {
     font-size: 1.4rem;
     margin-bottom: 5px;
 }
+#tab .tab_detail_info .summary_content {
+    width: 100%;
+    height: 40px;
+    line-height: 1.5;
+    overflow: hidden;
+}
 #tab .tab_detail_info ul li > h3 {
     font-size: 1.4rem;
     margin-bottom: 20px;
@@ -486,6 +495,10 @@ body {
     display: inline-block;
     width: 15px;
     height: 10px;
+}
+/* 자세히 버튼 눌렀을 떄 토글 클래스 */
+.extend_toggle {
+    height: auto !important;
 }
 
 #tab .tab_detail_quiz {
