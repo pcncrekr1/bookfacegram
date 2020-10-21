@@ -387,8 +387,14 @@ body {
     width: 150px;
     margin-bottom: 10px;
 }
+#tab .book_like_wrap .deco_text {
+    font-size: 1.2rem;
+    color: #f00;
+    margin-bottom: 5px;
+}
 #tab .book_like_wrap h2 {
     font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 #tab .detail_tab_menu {
     width: 100%;

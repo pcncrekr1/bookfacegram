@@ -108,18 +108,6 @@ $(function(){
     });
 
 
-
-    // textarea 글자수 제한
-    $('#talkArea').keyup(function (){
-        var content = $(this).val();
-
-        if (content.length > 200){
-            alert("최대 200자까지 입력 가능합니다.");
-            $(this).val(content.substring(0, 200));
-        }
-    });
-
-
     // 별점 주기
     $('.thumb_box a').click(function(){
         $(this).parent().children("a").removeClass("thumb_on");  /* 별점의 on 클래스 전부 제거 */ 
@@ -128,6 +116,36 @@ $(function(){
     });
 
 
+    // textarea 글자수, 해시태그 제한
+    $('#talkArea').keydown(function (event){
+        var content = $(this).val();
 
-    
+        if (content.length > 200 && event.keyCode != 13){
+            alert("최대 200자까지 입력 가능합니다.");
+            $(this).val(content.substring(0, 200));
+        }
+
+        // 해시태그
+        var splitedArray = content.split(' '); // 공백을 기준으로 문자열을 자른다.
+
+        var linkedContent = '';
+        var linkedContentArray = [];
+        for(var word in splitedArray) {
+            word = splitedArray[word];
+            if(word.indexOf('#') == 0) { // # 문자를 찾는다.
+                linkedContentArray += word;
+                word = '<a href="\링크">' + word + '</a>'; 
+            }
+            linkedContent += word + ' ';
+        }
+        
+        linkedContentArray = content.split(' #'); 
+        console.log(linkedContentArray);
+        if (linkedContentArray.length > 10 && event.keyCode != 13){
+            alert("해시태그는 최대 10개까지 입력 가능합니다.");
+            $(this).val(content.substring(0, 200));
+        }
+        console.log(linkedContent);
+    });
+
 });
