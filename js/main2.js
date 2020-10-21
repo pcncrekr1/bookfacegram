@@ -45,6 +45,13 @@ $(function(){
 
 
 
+    // 더블클릭 시 도서 찜 하트 표시
+    var book_detail_img = $("#tab .book_like_wrap > img");
+    book_detail_img.dblclick(function() { 
+        $(this).siblings(".choice_heart").toggleClass("choice_heart_on");
+    });
+
+
     // book detail tab show & hide
     var info_btn = $('.detail_tab_menu ul li:first-child a');
     var quiz_btn = $('.detail_tab_menu ul li:nth-child(2) a');

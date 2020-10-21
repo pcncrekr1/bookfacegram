@@ -380,12 +380,33 @@ body {
 #tab .book_like_wrap {
     width: 100%;
     text-align: center;
+    position: relative;
     padding: 20px 0;
 }
 #tab .book_like_wrap img {
     display: inline-block;
     width: 150px;
     margin-bottom: 10px;
+}
+#tab .book_like_wrap .choice_heart {
+    display: none;
+}
+/* 찜하기 더블클릭 토글 클래스 */
+.choice_heart_on {
+    display: block !important;
+    font-size: 3rem !important;
+    font-weight: bold !important;
+    color: #fff !important;
+
+    position: absolute !important; 
+    left: 50% !important; 
+    top: 40% !important;
+    
+    -webkit-transform: translate(-50%,-50%) !important;
+    -moz-transform: translate(-50%,-50%) !important;
+    -ms-transform: translate(-50%,-50%) !important;
+    -o-transform: translate(-50%,-50%) !important;
+    transform: translate(-50%,-50%) !important;
 }
 #tab .book_like_wrap .deco_text {
     font-size: 1.2rem;
