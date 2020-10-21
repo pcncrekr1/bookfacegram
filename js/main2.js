@@ -19,6 +19,7 @@ $(function(){
     });
     
 
+
     // 문해고사 정답 체크
     $(".exam_submit_btn").click(function () { 
         if($('input:radio[id=choice3]').is(':checked')) {
@@ -28,6 +29,8 @@ $(function(){
         }
     });
 
+    
+    
     // 파일 선택 시 
     var fileTarget = $('.filebox .upload-hidden'); 
     fileTarget.on('change', function(){ // 값이 변경되면 
@@ -103,4 +106,28 @@ $(function(){
 
         event.preventDefault();
     });
+
+
+
+    // textarea 글자수 제한
+    $('#talkArea').keyup(function (){
+        var content = $(this).val();
+
+        if (content.length > 200){
+            alert("최대 200자까지 입력 가능합니다.");
+            $(this).val(content.substring(0, 200));
+        }
+    });
+
+
+    // 별점 주기
+    $('.thumb_box a').click(function(){
+        $(this).parent().children("a").removeClass("thumb_on");  /* 별점의 on 클래스 전부 제거 */ 
+        $(this).addClass("thumb_on").prevAll("a").addClass("thumb_on"); /* 클릭한 별과, 그 앞 까지 별점에 on 클래스 추가 */
+        return false;
+    });
+
+
+
+    
 });

@@ -522,12 +522,14 @@ body {
     display: inline-block;
     width: 50px;
     height: 50px;
+    background: url(../images/main_page/new_books/book_detail/recommend.png) no-repeat 0 0;
+    background-size: cover;
 }
-#tab .tab_detail_talk .thumb_box img {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+/* 별점 활성화 클래스 */
+.thumb_on {
+    background-image: url(../images/main_page/new_books/book_detail/recommend_o.png) !important;
 }
+
 #tab .tab_detail_talk form {
     width: 100%;
     text-align: right;
