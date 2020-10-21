@@ -428,6 +428,172 @@ body {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+/* 탭 활성화 클래스 */
+.detail_tab_active {
+    color: #000 !important;
+}
+.detail_tab_active::after{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000;
+
+    position: absolute; left: 50%; bottom: 0;
+    
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+/* tab content */
+#tab .tab_detail_info,
+#tab .tab_detail_quiz,
+#tab .tab_detail_talk {
+    /* display: none; */
+    padding: 0 5%;
+}
+#tab .tab_detail_info ul {
+    width: 100%;
+    height: 100%;
+}
+#tab .tab_detail_info li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+#tab .tab_detail_info .summary_title_box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+#tab .tab_detail_info .summary_title_box h3 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+#tab .tab_detail_info ul li > h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+#tab .tab_detail_info ul li .extend_box {
+    text-align: center;
+    margin-top: 20px;
+}
+#tab .tab_detail_info ul li .extend_box a {
+    color: #8F8F8F;
+}
+#tab .tab_detail_info ul li .extend_box img {
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+}
+
+#tab .tab_detail_quiz {
+    width: 100%;
+}
+#tab .tab_detail_quiz p {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#tab .tab_detail_talk {
+    width: 100%;
+}
+#tab .tab_detail_talk .thumb_box {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 30px 0;
+}
+#tab .tab_detail_talk .thumb_box a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+#tab .tab_detail_talk .thumb_box img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+#tab .tab_detail_talk form {
+    width: 100%;
+    text-align: right;
+}
+#tab .tab_detail_talk form textarea {
+    display: block;
+    width: 100%;
+    height: 200px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+#tab .tab_detail_talk form textarea::-webkit-input-placeholder {
+    color: #848484;
+    font-family: "NanumSquare", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 80px;
+}
+#tab .tab_detail_talk form textarea:-moz-placeholder {
+    /* Firefox 18- */
+    color: #848484;
+    font-family: "NanumSquare", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 80px;
+}
+#tab .tab_detail_talk form textarea::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #848484;
+    font-family: "NanumSquare", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 80px;
+}
+#tab .tab_detail_talk form textarea:-ms-input-placeholder {
+    color: #848484;
+    font-family: "NanumSquare", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 80px;
+}
+#tab .tab_detail_talk form .talk_submit {
+    display: inline-block;
+    width: 70px;
+    height: 35px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #333333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#tab .tab_detail_talk > ul {
+    width: 100%;
+    margin-top: 20px;
+}
+#tab .tab_detail_talk > ul li {
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+#tab .tab_detail_talk .id_date_box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#tab .tab_detail_talk .id_date_box div {
+    color: #848484;
+}
+#tab .tab_detail_talk .hashtag_box {
+    color: #07f;
+    margin-top: 10px;
+}
 
 
 
