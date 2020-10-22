@@ -163,15 +163,14 @@ $(function(){
             var word = splitedArray[i];
             if(word.indexOf('#') == 0) { // # 문자를 찾는다.
                 hashtags += splitedArray[i] + " ";
-                console.log("hashtags : " + hashtags);
             }
         }
+
         var hashtagsArray = hashtags.split(" ");
         console.log("hashtagsArray : " + hashtagsArray);
         if(hashtagsArray.length - 1 > 10) {
             alert("해시태그는 최대 10개까지 입력 가능합니다.");
-            // var totalText = $(this).val();
-            // $(this).val(totalText);
+            $(this).val(content.slice(0, -1)); // 맨 끝 해시태그 제거
         }
     });
 
