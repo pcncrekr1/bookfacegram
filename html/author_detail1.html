@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookfacegram</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="header_top">
+            <a href="#" class="menu_left">
+                <img src="../images/menu_left/icon/menu_icon.png" alt="메뉴 아이콘">
+            </a>
+            <h1><a href="new_books.html">BOOKPING</a></h1>
+            <a href="#" class="camera_btn">
+                <label for="camera"></label>
+                <input type="file" id="camera" name="camera" accept="image/*"/>
+            </a>
+        </div>
+
+        <div id="search">
+            <div class="search_wrap">
+                <input type="text" name="input_search" class="input_search" id="inputSearch">
+                <a href="#" class="magnifier_btn">
+                    <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
+                </a>
+            </div>
+        </div>
+
+        <!-- tab menu -->
+        <div class="main_tab_menu">
+            <a href="new_books.html">NEW BOOKS</a>
+            <a href="my_books.html" class="main_tab_active">MY BOOKS</a>
+            <a href="activity.html">ACTIVITY</a>
+        </div>
+    </header>
+
+    <div id="navi">
+        <div class="gnb_hidden">
+            <div class="user_yellow">
+                <img src="../images/menu_left/icon/user.png" alt="프로필 사진">
+                <div><strong id="id_name"></strong> 님</div>
+            </div>
+            <ul>
+                <li><a href="notice.html">ㆍ공지사항</a></li>
+                <li><a href="event.html">ㆍ이벤트</a></li>
+                <li><a href="bookdrawer.html">ㆍ책 서랍</a></li>
+                <li><a href="store.html">ㆍ북핑스토어</a></li>
+                <li><a href="profile.html">ㆍ개인정보수정</a></li>
+                <li><a href="faq.html">ㆍ도움말</a></li>
+                <li><a href="setting.html">ㆍ앱설정</a></li>
+            </ul>
+        </div>
+
+        <!-- gnb_hidden 투명 배경 -->
+        <div class="hidden_cover">
+        </div>
+    </div>
+    
+    
+    <div id="tab">
+        <div class="book_like_wrap">
+            <img src="../images/main_page/my_books/author/book_detail/book1.jpg" alt="사랑은 내 시간을 기꺼이 건네주는 것이다">
+            <div class="choice_heart">♡</div>
+            <div class="deco_text"></div>
+            <h2>사랑은 내 시간을 기꺼이 건네주는 것이다</h2>
+        </div>
+
+        <!-- detail tab menu -->
+        <div class="detail_tab_menu">
+            <ul>
+                <li><a href="#" class="detail_tab_active">도서소개</a></li>
+                <li><a href="#">독서퀴즈</a></li>
+                <li><a href="#">북핑톡</a></li>
+            </ul>
+        </div>
+
+        <!-- detail tab content -->
+        <div class="tab_detail_info">
+            <ul>
+                <li>
+                    <div class="summary_title_box">
+                        <h3>저자 | 이기주</h3>
+                        <h3>출판사 | 황소북스</h3>
+                        <h3>출판년도 | 2020.03.18</h3>
+                    </div>
+                    <div class="summary_content">
+                        이기주 작가의 첫 번째 앤솔로지 『사랑은 내 시간을 기꺼이 건네주는 것이다』. 총 132편으로 구성된 이 책은 눈과 귀로 채집한 글감을 가슴으로 들여다보며 써내려가는 이기주 작가 특유의 관찰력과 섬세한 문장이 총망라되어 있다. 그중에서도 사랑과 인생을 소재로 한 글과 문장들이 빛을 발한다. 남녀 간의 사랑은 물론이거니와 부모 자식 간의 사랑, 이웃 간의 사랑으로 확대되는 범우주적인 사랑에 대한 단상과 인생에 대한 통찰력 있는 문장들은 보는 이의 고개를 숙연하게 만든다.
+                    </div>
+                    <div class="extend_box">
+                        <a href="#">
+                            <img src="../images/main_page/new_books/book_detail/more_down.png" alt=""> 자세히
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <h3>저자소개</h3>
+                    <div class="summary_content">
+                        저자 이기주는 말을 아껴 글을 쓴다. 쓸모를 다해 버려졌거나 사라져 가는 것에 대해 주로 쓴다. 고민이 깃든 말과 글에 탐닉한다. 가끔은 어머니 화장대에 담담히 꽃을 올려놓곤 한다. 지은 책으로는 《언어의 온도》, 《말의 품격》, 《한때 소중했던 것들》, 《글의 품격》, 《사랑은 내 시간을 기꺼이 건네주는 것이다》 등이 있다.
+                    </div>
+                    <div class="extend_box">
+                        <a href="#">
+                            <img src="../images/main_page/new_books/book_detail/more_down.png" alt=""> 자세히
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <h3>출판사 서평</h3>
+                    <div class="summary_content">
+                        이기주 작가의 첫 번째 앤솔로지가 출간되었다. 《언어의 온도》를 비롯한 기존의 책들에서 뽑은 사랑과 인생에 대한 글과 최근 새롭게 쓴 글을 더했다. 여기에 백초윤 작가의 일러스트를 추가해 색다른 정취를 선사한다. 총 132편으로 구성된 이 책은 눈과 귀로 채집한 글감을 가슴으로 들여다보며 써내려가는 이기주 작가 특유의 관찰력과 섬세한 문장이 총망라되어 있다. 그중에서도 사랑과 인생을 소재로 한 글과 문장들이 빛을 발한다.
+                    </div>
+                    <div class="extend_box">
+                        <a href="#">
+                            <img src="../images/main_page/new_books/book_detail/more_down.png" alt=""> 자세히
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab_detail_quiz">
+            <p>
+                해당 도서는 독서퀴즈 서비스가<br>제공되지 않습니다.
+            </p>
+        </div>
+
+        <div class="tab_detail_talk">
+            <div class="thumb_box">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+
+            <form action="../html/author_detail1.html">
+                <textarea name="talk_area" id="talkArea" cols="30" rows="10" placeholder="자유롭게 북핑톡을 남겨주세요.&#13;&#10;(최대 200자, #해시태그 최대 10개 가능)"></textarea>
+                <input type="submit" value="등록" class="talk_submit">
+            </form>
+            
+            <ul>
+                <li>
+                    <div class="id_date_box">
+                        <div>피치못할피치:D</div>
+                        <div>2020.09.06.</div>
+                    </div>
+                    <div class="talk_content">
+                        부자가 되기 위해 사소한 습관부터 하나씩 고쳐봐야겠다는 생각이 들었고, 저를 한 번 되돌아볼 수 있는 시간이 되어 좋았습니다^^
+                    </div>
+                    <div class="hashtag_box">
+                        #존리 #존리의부자되는습관 #부자를꿈꾼다 #부자되기_도전! #로또당첨
+                    </div>
+                </li>
+                <li>
+                    <div class="id_date_box">
+                        <div>자두자두졸령</div>
+                        <div>2020.09.04.</div>
+                    </div>
+                    <div class="talk_content">
+                        부자되고싶다아아아아아 요즘 티비에 자주 보이시는 존리님! 궁금해서 읽어봤는데, 너무 재밌었어요~
+                    </div>
+                    <div class="hashtag_box">
+                        #존리 #부자 #독서 #책읽기습관 #저축
+                    </div>
+                </li>
+                <li>
+                    <div class="id_date_box">
+                        <div>아네모네세모네</div>
+                        <div>2020.09.01.</div>
+                    </div>
+                    <div class="talk_content">
+                        괜히 베스트셀러가 아니네요! 재밌는데 제가 과연 지킬 수 있을지 ㅠ_ㅠ
+                    </div>
+                    <div class="hashtag_box">
+                        #부자되는법 #부자되는습관 #존리 #책추천
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- My JS -->
+    <script src="../js/main2.js"></script>
+</body>
+</html>
