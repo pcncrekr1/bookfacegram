@@ -39,7 +39,7 @@ $(function(){
 
     var my_author_bx2 = $('.my_author_bx2').bxSlider({
         minSlides: 3,
-        maxSlides: 6,
+        maxSlides: 5,
         auto: false,
         pager: false,
         controls: false,

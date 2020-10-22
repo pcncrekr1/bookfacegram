@@ -237,17 +237,17 @@ body {
 #tab h2 .class_child_span {
     color: #760A9C;
 }
-#tab .main_tab_content .book_title_box {
+#tab .book_title_box {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
     margin: 40px 0 10px 0;
 }
-#tab .main_tab_content .book_title_box h2 {
+#tab .book_title_box h2 {
     width: 100%;
 }
-#tab .main_tab_content .book_title_box a {
+#tab .book_title_box a {
     display: block;
     width: 65px;
     font-size: 1.2rem;
@@ -506,6 +506,7 @@ body {
     height: 40px;
     line-height: 1.5;
     overflow: hidden;
+    text-align: justify;
 }
 #tab .tab_detail_info ul li > h3 {
     font-size: 1.4rem;
@@ -720,9 +721,12 @@ body {
 
 /* ************* my_books tab *************** */
 #tab .custom_book_title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin: 0 0 20px 5%;
     padding-top: 20px;
+}
+#tab .custom_book_title span {
+    color: #F3714F;
 }
 #tab .my_tab_menu {
     width: 100%;
@@ -755,14 +759,6 @@ body {
     color: #fff !important;
 }
 
-#tab .show_all {
-    width: 100%;
-    height: 20px;
-    text-align: right;
-    padding-right: 5%;
-    margin-bottom: 20px;
-}
-
 #tab .tab_genre,
 #tab .tab_author,
 #tab .tab_subject {
@@ -772,8 +768,19 @@ body {
 #tab .tab_genre h2,
 #tab .tab_author h2,
 #tab .tab_subject h2 {
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+#tab .book_title_box h2 .author_span1 {
+    color: #ABBD2B;
+}
+#tab .book_title_box h2 .author_span2 {
+    color: #1152B8;
+}
+#tab .book_title_box h2 .subject_span1 {
+    color: #2AB5BA;
+}
+#tab .book_title_box h2 .subject_span2 {
+    color: #0854C4;
 }
 
 #tab .my_self_bx li,
@@ -793,11 +800,11 @@ body {
 #tab .my_famous_bx li a > div,
 #tab .my_family_bx li a > div {
     margin-top: 10px;
-    text-overflow:ellipsis;
-    white-space:nowrap;
-    word-wrap:normal;
-    overflow:hidden;
-    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    font-size: 1.3rem;
 }
 
 

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookfacegram</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+    <header id="header">
+        <div class="header_top">
+            <a href="#" class="menu_left">
+                <img src="../images/menu_left/icon/menu_icon.png" alt="메뉴 아이콘">
+            </a>
+            <h1><a href="new_books.html">BOOKPING</a></h1>
+            <a href="#" class="camera_btn">
+                <label for="camera"></label>
+                <input type="file" id="camera" name="camera" accept="image/*"/>
+            </a>
+        </div>
+
+        <div id="search">
+            <div class="search_wrap">
+                <input type="text" name="input_search" class="input_search" id="inputSearch">
+                <a href="#" class="magnifier_btn">
+                    <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
+                </a>
+            </div>
+        </div>
+
+        <!-- tab menu -->
+        <div class="main_tab_menu">
+            <a href="new_books.html">NEW BOOKS</a>
+            <a href="my_books.html" class="main_tab_active">MY BOOKS</a>
+            <a href="activity.html">ACTIVITY</a>
+        </div>
+    </header>
+
+    <div id="navi">
+        <div class="gnb_hidden">
+            <div class="user_yellow">
+                <img src="../images/menu_left/icon/user.png" alt="프로필 사진">
+                <div><strong id="id_name"></strong> 님</div>
+            </div>
+            <ul>
+                <li><a href="notice.html">ㆍ공지사항</a></li>
+                <li><a href="event.html">ㆍ이벤트</a></li>
+                <li><a href="bookdrawer.html">ㆍ책 서랍</a></li>
+                <li><a href="store.html">ㆍ북핑스토어</a></li>
+                <li><a href="profile.html">ㆍ개인정보수정</a></li>
+                <li><a href="faq.html">ㆍ도움말</a></li>
+                <li><a href="setting.html">ㆍ앱설정</a></li>
+            </ul>
+        </div>
+
+        <!-- gnb_hidden 투명 배경 -->
+        <div class="hidden_cover">
+        </div>
+    </div>
+    
+    
+    <div id="tab">
+        <div class="list_title_box">
+            <h2>PCNC_TT님을 위한 저자별 맞춤 추천도서</h2>
+            <p>저자별 > 스미노요루</p>
+        </div>
+
+        <div class="book_list_wrap">
+            <ul>
+                <li>
+                    <div class="book_box">
+                        <a href="../html/author_list1.html">
+                            <img src="../images/main_page/my_books/author/book_list/book7.jpg" alt="스미노요루 작가의 책1">
+                            <div class="book_info_box">
+                                <h3>너의 췌장을 먹고 싶어</h3>
+                                <div class="author">스미노요루</div>
+                                <div class="book_info">"책과 관련된 한 문장"</div>
+                                <div class="price">11,900원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="button_box">
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/like2.png" alt="책서랍">
+                        </a>
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/talk2.png" alt="북핑톡">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_box">
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/book8.jpg" alt="스미노요루 작가의 책2">
+                            <div class="book_info_box">
+                                <h3>어리고 아리고 여려서</h3>
+                                <div class="author">스미노요루</div>
+                                <div class="book_info">"책과 관련된 한 문장"</div>
+                                <div class="price">13,000원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="button_box">
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/like2.png" alt="책서랍">
+                        </a>
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/talk2.png" alt="북핑톡">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_box">
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/book9.jpg" alt="스미노요루 작가의 책3">
+                            <div class="book_info_box">
+                                <h3>또 다시 같은 꿈을 꾸었어</h3>
+                                <div class="author">스미노요루</div>
+                                <div class="book_info">"책과 관련된 한 문장"</div>
+                                <div class="price">12,000원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="button_box">
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/like2.png" alt="책서랍">
+                        </a>
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/talk2.png" alt="북핑톡">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_box">
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/book10.jpg" alt="스미노요루 작가의 책4">
+                            <div class="book_info_box">
+                                <h3>밤의 괴물</h3>
+                                <div class="author">스미노요루</div>
+                                <div class="book_info">"책과 관련된 한 문장"</div>
+                                <div class="price">11,000원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="button_box">
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/like2.png" alt="책서랍">
+                        </a>
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/talk2.png" alt="북핑톡">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_box">
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/book11.jpg" alt="스미노요루 작가의 책5">
+                            <div class="book_info_box">
+                                <h3>나만의 비밀</h3>
+                                <div class="author">스미노요루</div>
+                                <div class="book_info">"책과 관련된 한 문장"</div>
+                                <div class="price">11,000원</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="button_box">
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/like2.png" alt="책서랍">
+                        </a>
+                        <a href="#">
+                            <img src="../images/main_page/my_books/author/book_list/talk2.png" alt="북핑톡">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- My JS -->
+    <script src="../js/list.js"></script>
+</body>
+</html>
