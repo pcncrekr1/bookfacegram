@@ -299,11 +299,11 @@ body {
 /* new book list(전체보기 리스트) */
 #tab .list_title_box {
     width: 100%;
-    padding: 40px 5% 20px 5%;
+    padding: 20px 5%;
 }
 #tab .list_title_box h2 {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 15px;
 }
 #tab .list_title_box p {
@@ -1147,8 +1147,8 @@ select::-ms-expand { /* IE 10, 11의 네이티브 화살표 숨기기 */
 
 
     /* new_book_list */
-    #tab .list_title_box {
-        padding: 40px 5% 40px 5%;
+    #tab .list_title_box h2 {
+        font-size: 1.8rem;
     }
     #tab .list_title_box p {
         font-size: 1.6rem;
