@@ -821,11 +821,16 @@ body {
 #tab .circle_progress {
     width: 48%;
     height: 50%;
-    /* position: relative; */
     float: left;
     border: 1px solid #ddd;
     border-radius: 7px;
-    padding: 20px;
+    /* padding: 20px; */
+}
+#tab .circle_progress a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 #tab .circle_progress:nth-child(odd) {
     margin-right: 2%;
@@ -1278,13 +1283,6 @@ select::-ms-expand { /* IE 10, 11의 네이티브 화살표 숨기기 */
         font-size: 1.8rem;
     }
     
-    /* #tab .circle_progress h3,
-    #tab .circle_progress .kbs_exam_title {
-        font-size: 1.8rem;
-    }
-    #tab .circle_progress .kbs_exam_title {
-        padding-top: 20px;
-    } */
     #tab .activity_list ul li h3 {
         font-size: 1.6rem;
     }
