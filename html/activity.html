@@ -66,41 +66,43 @@
     </div>
 
     
-    <div id="tab">
+    <div id="tab" class="clearfix">
         <h2 class="progress_title">이번달 나의 독서활동 참여도</h2>
-        <div class="circle_progress">
-            <div id="circleProgress"></div>
-            <div>
-                8월<br>
-                나의 독서활동<br>
-                참여도
+        
+        <div class="chart_wrap">
+            <div class="circle_progress">
+                <div class="canvas_box">
+                    <canvas id="circleProgress1"></canvas>
+                    <img src="../images/main_page/activity/icon/exam.png" alt="돋보기 이미지">
+                </div>
+                <h3>문해고사</h3>
+            </div>
+
+            <div class="circle_progress">
+                <div class="canvas_box">
+                    <canvas id="circleProgress2"></canvas>
+                    <img src="../images/main_page/activity/icon/kbs_exam.png" alt="컴퓨터 이미지">
+                </div>
+                <h3 class="kbs_exam_title">책과함께, KBS한국어능력시험</h3>
+            </div>
+
+            <div class="circle_progress">
+                <div class="canvas_box">
+                    <canvas id="circleProgress3"></canvas>
+                    <img src="../images/main_page/activity/icon/competition.png" alt="연필 이미지">
+                </div>
+                <h3>독후감대회</h3>
+            </div>
+
+            <div class="circle_progress">
+                <div class="canvas_box">
+                    <canvas id="circleProgress4"></canvas>
+                    <img src="../images/main_page/activity/icon/quiz.png" alt="체크리스트 이미지">
+                </div>
+                <h3>독서퀴즈</h3>
             </div>
         </div>
 
-        <div class="activity_list">
-            <ul>
-                <li class="clearfix">
-                    <img src="../images/main_page/activity/icon/exam.jpg" alt="문해고사">
-                    <h3>문해고사</h3>
-                    <a href="booktest.html">GO</a>
-                </li>
-                <li class="clearfix">
-                    <img src="../images/main_page/activity/icon/competition.jpg" alt="독후감대회">
-                    <h3>독후감대회</h3>
-                    <a href="bookcontest.html">GO</a>
-                </li>
-                <li class="clearfix">
-                    <img src="../images/main_page/activity/icon/kbs_exam.jpg" alt="책과함께, KBS한국어 능력시험">
-                    <h3>책과함께, KBS한국어 능력시험</h3>
-                    <a href="#">GO</a>
-                </li>
-                <li class="clearfix">
-                    <img src="../images/main_page/activity/icon/quiz.jpg" alt="독서퀴즈">
-                    <h3>독서퀴즈</h3>
-                    <a href="#">GO</a>
-                </li>
-            </ul>
-        </div>
     </div>
 
 
@@ -114,9 +116,6 @@
 
     <!-- chart JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
-
-    <!-- progressbar JS -->
-    <script src="../js/circle-progress.min.js"></script>
 
     <!-- My JS -->
     <script src="../js/activity.js"></script>

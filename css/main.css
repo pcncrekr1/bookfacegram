@@ -815,18 +815,32 @@ body {
     margin: 0 0 20px 5%;
     padding-top: 20px;
 }
+#tab .chart_wrap {
+    padding: 0 5%;
+}
 #tab .circle_progress {
+    width: 48%;
+    height: 50%;
+    /* position: relative; */
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 20px;
+}
+#tab .circle_progress:nth-child(odd) {
+    margin-right: 2%;
+}
+#tab .circle_progress:nth-child(1),
+#tab .circle_progress:nth-child(2) {
+    margin-bottom: 2%;
+}
+#tab .circle_progress .canvas_box {
     position: relative;
 }
-#tab .circle_progress #circleProgress {
-    padding: 30px;
-    text-align: center;
-}
-#tab .circle_progress #circleProgress canvas {
-    max-width: 100%;
-    max-height: 100%;
-}
-#tab .circle_progress div:last-child {
+#tab .circle_progress .canvas_box img {
+    display: block;
+    width: 20%;
+    height: 50%;
     position: absolute; left: 50%; top: 50%;
     
     -webkit-transform: translate(-50%,-50%);
@@ -834,11 +848,21 @@ body {
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-
+}
+#tab .circle_progress .canvas_box #circleProgress2 + img {
+    width: 30%;
+}
+#tab .circle_progress h3 {
+    width: 100%;
     text-align: center;
-    color: #2C8DBA;
-    font-size: 1.6rem;
-    font-weight: bold;
+    font-size: 1.4rem;
+    padding-top: 20px;
+}
+#tab .circle_progress .kbs_exam_title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 5px;
 }
 
 #tab .activity_list {
@@ -1116,6 +1140,15 @@ select::-ms-expand { /* IE 10, 11의 네이티브 화살표 숨기기 */
 
 /* ******************* Media Query ********************* */
 @media (min-width: 400px) {
+    
+    #tab .circle_progress h3,
+    #tab .circle_progress .kbs_exam_title {
+        font-size: 1.8rem;
+    }
+    #tab .circle_progress .kbs_exam_title {
+        padding-top: 20px;
+    }
+
     #content .exam_text {
         bottom: 12%;
     }
@@ -1245,9 +1278,13 @@ select::-ms-expand { /* IE 10, 11의 네이티브 화살표 숨기기 */
         font-size: 1.8rem;
     }
     
-    #tab .circle_progress div:last-child {
-        font-size: 2rem;
+    /* #tab .circle_progress h3,
+    #tab .circle_progress .kbs_exam_title {
+        font-size: 1.8rem;
     }
+    #tab .circle_progress .kbs_exam_title {
+        padding-top: 20px;
+    } */
     #tab .activity_list ul li h3 {
         font-size: 1.6rem;
     }
