@@ -893,6 +893,7 @@ body {
 #content img,
 #content4 img {
     width: 100%;
+    margin-top: 20px;
 }
 #tab .exam_text {
     padding: 5%; 
@@ -927,7 +928,6 @@ body {
 
 /* ************ booktest2.html ************* */
 /* ************ booktest3.html ************* */
-
 /* ************ booktest5.html ************* */
 /* ************ booktest6.html ************* */
 #content2,
@@ -997,21 +997,21 @@ body {
 .booktest5_next_btn,
 .booktest6_next_btn {
     display: inline-block;
-    width: 49%;
+    width: 48%;
     height: 50px;
     line-height: 50px;
     font-size: 1.4rem;
     text-align: center;
     color: #000;
     background-color: #E5E5E5;
-    margin-right: 1%;
+    margin-right: 2%;
 }
 .booktest2_ok_btn,
 .booktest3_ok_btn,
 .booktest5_ok_btn,
 .booktest6_ok_btn {
     display: inline-block;
-    width: 49%;
+    width: 48%;
     height: 50px;
     line-height: 50px;
     font-size: 1.4rem;
@@ -1203,15 +1203,15 @@ select::-ms-expand { /* IE 10, 11의 네이티브 화살표 숨기기 */
 
 
 /* ************ bookcontest3.html ************* */
-#content3 {
+#bookcontest3 {
     width: 100%;
     text-align: center;
 }
-#content3 h2 {
+#bookcontest3 h2 {
     font-size: 2rem;
     padding: 50px;
 }
-#content3 a {
+#bookcontest3 a {
     display: inline-block;
     width: 250px;
     height: 40px;
