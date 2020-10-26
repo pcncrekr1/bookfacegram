@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookfacegram</title>
 
-    <!-- bxslider CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -47,7 +44,7 @@
         <div class="gnb_hidden">
             <div class="user_yellow">
                 <img src="../images/menu_left/icon/user.png" alt="프로필 사진">
-                <div><strong>PCNC_TT</strong>님</div>
+                <div><strong id="id_name"></strong> 님</div>
             </div>
             <ul>
                 <li><a href="notice.html">ㆍ공지사항</a></li>
@@ -64,73 +61,53 @@
         <div class="hidden_cover">
         </div>
     </div>
-
     
-    <div id="tab" class="clearfix">
-        <div class="progress_title_box">
-            <h2 class="progress_title">이번달 나의 독서활동 참여도</h2>
-            <a href="#" class="activity_detail_btn">나의 활동내역 보기></a>
+    
+    <div id="tab">
+        <div class="title_banner_box">
+            <h3>책과함께, KBS 한국어능력시험 대비하기!</h3>
+            <img src="../images/main_page/activity/detail_page/kbs_exam/title.png" alt="책은 지루하게만 느껴졌는데, 꾸준히 독서하는 습관이 생겼어요!">
         </div>
-        
-        <div class="chart_wrap">
-            <div class="circle_progress">
-                <a href="booktest.html">
-                    <div class="canvas_box">
-                        <canvas id="circleProgress1"></canvas>
-                        <img src="../images/main_page/activity/icon/exam.png" alt="돋보기 이미지">
-                    </div>
-                    <h3>문해고사</h3>
-                </a>
+        <div class="class_radio_wrap">
+            <h3>응시를 희망하는 급수를 선택해주세요.</h3>
+            <div class="class_radio_box">
+                <div class="radio_group">
+                    <input type="radio" name="class_radio" value="child_class" id="childClass" checked>
+                    <label for="childClass">누리급 | 유치부</label>
+                </div>
+                <div class="radio_group">
+                    <input type="radio" name="class_radio" value="1_class" id="1Class">
+                    <label for="1Class">1급 | 중3-고1</label>
+                </div>
+                <div class="radio_group">
+                    <input type="radio" name="class_radio" value="2_class" id="2Class">
+                    <label for="2Class">2급 | 중1-중2</label>
+                </div>
+                <div class="radio_group">
+                    <input type="radio" name="class_radio" value="3_class" id="3Class">
+                    <label for="3Class">(준)3급 | 초5-초6</label>
+                </div> 
+                <div class="radio_group">
+                    <input type="radio" name="class_radio" value="4_class" id="4Class">
+                    <label for="4Class">(준)4급 | 초3-초4</label>
+                </div>
+                <div class="radio_group">
+                    <input type="radio" name="class_radio" value="5_class" id="5Class">
+                    <label for="5Class">(준)5급 | 초1-초2</label>
+                </div>
             </div>
-
-            <div class="circle_progress">
-                <a href="kbs_main.html">
-                    <div class="canvas_box">
-                        <canvas id="circleProgress2"></canvas>
-                        <img src="../images/main_page/activity/icon/kbs_exam.png" alt="컴퓨터 이미지">
-                    </div>
-                    <h3 class="kbs_exam_title">책과함께, KBS한국어능력시험</h3>
-                </a>
-            </div>
-
-            <div class="circle_progress">
-                <a href="#">
-                    <div class="canvas_box">
-                        <canvas id="circleProgress3"></canvas>
-                        <img src="../images/main_page/activity/icon/competition.png" alt="연필 이미지">
-                    </div>
-                    <h3>독후감대회</h3>
-                </a>
-            </div>
-
-            <div class="circle_progress">
-                <a href="#">
-                    <div class="canvas_box">
-                        <canvas id="circleProgress4"></canvas>
-                        <img src="../images/main_page/activity/icon/quiz.png" alt="체크리스트 이미지">
-                    </div>
-                    <h3>독서퀴즈</h3>
-                </a>
-            </div>
+            <a href="#">응시하기</a>
         </div>
-
+        <div class="kbs_info_box">
+            <img src="../images/main_page/activity/detail_page/kbs_exam/kbs_info.jpg" alt="책과함께 kbs 한국어능력시험 시험 정보">
+        </div>
     </div>
-
-
 
 
     <!-- jquery JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <!-- bxslider JS -->
-    <script src="../js/jquery.bxslider.js"></script>
-
-    <!-- chart JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
-
     <!-- My JS -->
-    <script src="../js/activity.js"></script>
     <script src="../js/nav.js"></script>
-
 </body>
 </html>

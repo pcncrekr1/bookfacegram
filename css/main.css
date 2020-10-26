@@ -1055,6 +1055,27 @@ body {
 
 
 
+/* ************ kbs_main.html ************* */
+#tab .title_banner_box {
+    width: 100%;
+    position: relative;
+    padding: 20px 5% 0 5%;
+}
+#tab .title_banner_box h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+}
+#tab .title_banner_box img {
+    width: 100%;
+}
+
+
+
+
+
 
 /* ************ bookcontest.html ************* */
 .entry_btn {
