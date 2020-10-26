@@ -5,7 +5,16 @@ $(function(){
         if($('input:radio[id=choice3]').is(':checked')) {
             window.location.href = "../html/booktest2.html";
         } else {
-            alert("오답입니다!");
+            // alert("오답입니다!");
+            window.location.href = "../html/booktest3.html";
+        }
+    });
+    $(".exam_submit_btn2").click(function () { 
+        if($('input:radio[id=choice2_4]').is(':checked')) {
+            window.location.href = "../html/booktest5.html";
+        } else {
+            // alert("오답입니다!");
+            window.location.href = "../html/booktest6.html";
         }
     });
 
