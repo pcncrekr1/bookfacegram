@@ -1071,8 +1071,260 @@ body {
 #tab .title_banner_box img {
     width: 100%;
 }
+#tab .class_radio_wrap {
+    width: 90%;
+    text-align: center;
+    background: url(../images/main_page/activity/detail_page/exam/body.jpg) no-repeat 0 0;
+    background-size: cover;
+    padding: 40px 10px;
+    margin: 0 auto;
+}
+#tab .class_radio_wrap h3 {
+    width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+#tab .class_radio_wrap .class_radio_box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 30px 0;
+}
+#tab .class_radio_wrap .class_radio_box .radio_group_box {
+    width: 180px;
+    text-align: justify;
+    margin: 0 auto;
+}
+#tab .class_radio_wrap .class_radio_box .radio_group {
+    margin-bottom: 10px;
+}
+#tab .class_radio_wrap .class_radio_box .radio_group label {
+    font-size: 1.4rem;
+}
+#tab .class_radio_wrap > a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: #000E1B;
+    color: #fff;
+    margin-top: 20px;
+}
+#tab .kbs_info_box {
+    width: 100%;
+}
+#tab .kbs_info_box img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
 
 
+
+/* ************ kbs_exam1.html ************* */
+#tab .kbs_exam1_title {
+    width: 100%;
+    padding: 20px 5%;
+}
+#tab .kbs_exam1_title h3 {
+    font-size: 1.5rem;
+}
+#tab .class_title {
+    width: 100%;
+    margin-bottom: 40px;
+}
+#tab .class_title h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#tab .question_wrap {
+    width: 90%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20px;
+}
+#tab .question_wrap h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+#tab .question_wrap .question_box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#tab .question_wrap .question_box h5 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 30px 0;
+}
+#tab .question_wrap .question_box .question_text {
+    width: 50%;
+    float: left;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+#tab .question_wrap .question_box .question_img {
+    width: 50%;
+    float: right;
+    padding: 5px;
+}
+#tab .question_wrap .question_box .question_img img {
+    width: 100%;
+}
+#tab .question_wrap .question_choice {
+    width: 100%;
+}
+#tab .question_wrap .question_choice .radio_group {
+    margin-bottom: 10px;
+}
+#tab .next_finish_btn {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+#tab .next_finish_btn a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000E1B;
+    color: #fff;
+}
+
+
+
+/* ************ kbs_exam2.html ************* */
+#tab .kbs_exam2_title {
+    width: 100%;
+    padding: 20px 5%;
+}
+#tab .kbs_exam2_title h3 {
+    font-size: 1.5rem;
+}
+#tab .class_title2 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+#tab .class_title2 h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#tab .question_wrap2 {
+    width: 90%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20px;
+}
+#tab .question_wrap2 h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+#tab .question_wrap2 .question_box2 {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#tab .question_wrap2 .question_box2 .question_text2 {
+    text-align: justify;
+    font-size: 1.4rem;
+}
+#tab .question_wrap2 .question_box2 .question_text2 #example {
+    outline: none;
+}
+#tab .question_wrap2 .question_choice2 {
+    width: 100%;
+}
+#tab .question_wrap2 .question_choice2 .radio_group {
+    margin-bottom: 10px;
+}
+#tab .next_finish_btn2 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+#tab .next_finish_btn2 a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000E1B;
+    color: #fff;
+}
+
+
+
+/* ************ kbs_exam10.html ************* */
+#tab .kbs_exam10_title {
+    width: 100%;
+    padding: 20px 5%;
+}
+#tab .kbs_exam10_title h3 {
+    font-size: 1.5rem;
+}
+#tab .class_title10 {
+    width: 100%;
+    margin-bottom: 40px;
+}
+#tab .class_title10 h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#tab .question_wrap10 {
+    width: 90%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20px;
+}
+#tab .question_wrap10 h4 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+#tab .question_wrap10 .question_box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#tab .question_wrap10 .question_box .question_img {
+    width: 30%;
+    float: left;
+    padding: 5px;
+}
+#tab .question_wrap10 .question_box .question_img img {
+    width: 100%;
+}
+#tab .question_wrap10 .question_box .question_text {
+    width: 70%;
+    float: right;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+#tab .question_wrap10 .question_choice10 {
+    width: 100%;
+}
+#tab .question_wrap10 .question_choice10 .radio_group {
+    margin-bottom: 10px;
+}
+#tab .next_finish_btn10 {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+#tab .next_finish_btn10 a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000E1B;
+    color: #fff;
+}
 
 
 
@@ -1417,6 +1669,61 @@ select::-ms-expand { /* IE 10, 11의 네이티브 화살표 숨기기 */
         font-size: 1.4rem;
     }
 
+
+    /* kbs_main.html */
+    #tab .title_banner_box h3 {
+        font-size: 1.8rem;
+    }
+    #tab .class_radio_wrap h3 {
+        font-size: 1.8rem;
+    }
+    #tab .class_radio_wrap .class_radio_box .radio_group label {
+        font-size: 1.8rem;
+    }
+    #tab .class_radio_wrap > a {
+        font-size: 1.8rem;
+    }
+
+
+    /* kbs_exam1.html */
+    #tab .kbs_exam1_title h3 {
+        font-size: 1.8rem;
+    }
+    #tab .class_title h3 {
+        font-size: 1.8rem;
+    }
+    #tab .question_wrap h4 {
+        font-size: 1.6rem;
+    }
+    #tab .question_wrap .question_box h5 {
+        font-size: 1.6rem;
+    }
+
+
+
+    /* kbs_exam2.html */
+    #tab .kbs_exam2_title h3 {
+        font-size: 1.8rem;
+    }
+    #tab .class_title2 h3 {
+        font-size: 1.8rem;
+    }
+    #tab .question_wrap2 h4 {
+        font-size: 1.6rem;
+    }
+
+
+
+    /* kbs_exam10.html */
+    #tab .kbs_exam10_title h3 {
+        font-size: 1.8rem;
+    }
+    #tab .class_title10 h3 {
+        font-size: 1.8rem;
+    }
+    #tab .question_wrap10 h4 {
+        font-size: 1.6rem;
+    }
 
 
 

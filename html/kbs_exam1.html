@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookfacegram</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+    <header id="header">
+    </header>
+
+    <div id="navi">
+    </div>
+    
+    
+    <div id="tab">
+        <div class="kbs_exam1_title">
+            <h3>책과함께, KBS한국어능력시험 대비하기!</h3>
+        </div>
+        <div class="class_title">
+            <h3>(준)3급 | 초5-초6</h3>
+        </div>
+        <div class="question_wrap">
+            <h4>1. 다음 글의 ㉠에 가장 알맞은 말은 무엇입니까?</h4>            
+            <div class="question_box clearfix">
+                <h5>'바나나킥'의 ㉠</h5>
+                <div class="question_text">
+                    축구 경기를 보다 보면 오른쪽 그림과 같이 힘껏 찬 공이 직선으로 나아가지 않고 왼쪽으로, 또는 오른쪽으로 크게 휘면서 날아가곤 하지.<br> 이렇게 공이 휘면서 날아가는 것은 '마그누스 효과'라고 불리는 현상 때문이야.
+                </div>
+                <div class="question_img">
+                    <img src="../images/main_page/activity/detail_page/kbs_exam/sample1.png" alt="마그누스 효과">
+                </div>
+            </div>
+            <div class="question_choice">
+                <div class="radio_group">
+                    <input type="radio" name="kbs_exam1" value="kbs_exam1_1" id="kbsExam1_1" checked>
+                    <label for="kbsExam1_1">① 상태</label>
+                </div>
+                <div class="radio_group">
+                    <input type="radio" name="kbs_exam1" value="kbs_exam1_2" id="kbsExam1_2">
+                    <label for="kbsExam1_2">② 원리</label>
+                </div>
+                <div class="radio_group">
+                    <input type="radio" name="kbs_exam1" value="kbs_exam1_3" id="kbsExam1_3">
+                    <label for="kbsExam1_3">③ 절차</label>
+                </div>
+                <div class="radio_group">
+                    <input type="radio" name="kbs_exam1" value="kbs_exam1_4" id="kbsExam1_4">
+                    <label for="kbsExam1_4">④ 효과</label>
+                </div>
+                <div class="radio_group">
+                    <input type="radio" name="kbs_exam1" value="kbs_exam1_5" id="kbsExam1_5">
+                    <label for="kbsExam1_5">⑤ 법칙</label>
+                </div>
+            </div>
+        </div>
+        <div class="next_finish_btn">
+            <a href="kbs_exam2.html">다음 문제</a>
+        </div>
+    </div>
+
+
+    <!-- jquery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- header3, nav JS -->
+    <script>
+        $(function(){
+            $("#header").load("header3.html");
+            $("#navi").load("nav.html");
+        });
+    </script>
+</body>
+</html>
