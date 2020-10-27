@@ -1133,7 +1133,7 @@ body {
 }
 #tab .class_title {
     width: 100%;
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 #tab .class_title h3 {
     width: 100%;
@@ -1165,6 +1165,7 @@ body {
     float: left;
     text-align: justify;
     font-size: 1.4rem;
+    line-height: 1.5;
 }
 #tab .question_wrap .question_box .question_img {
     width: 50%;
@@ -1207,7 +1208,7 @@ body {
 }
 #tab .class_title2 {
     width: 100%;
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 #tab .class_title2 h3 {
     width: 100%;
@@ -1232,6 +1233,7 @@ body {
 #tab .question_wrap2 .question_box2 .question_text2 {
     text-align: justify;
     font-size: 1.4rem;
+    line-height: 1.5;
 }
 #tab .question_wrap2 .question_box2 .question_text2 #example {
     outline: none;
@@ -1269,7 +1271,7 @@ body {
 }
 #tab .class_title10 {
     width: 100%;
-    margin-bottom: 40px;
+    margin: 20px 0;
 }
 #tab .class_title10 h3 {
     width: 100%;
@@ -1304,6 +1306,7 @@ body {
     float: right;
     text-align: justify;
     font-size: 1.4rem;
+    line-height: 1.5;
 }
 #tab .question_wrap10 .question_choice10 {
     width: 100%;
@@ -1327,6 +1330,80 @@ body {
 }
 
 
+
+/* ************ kbs_exam_result.html ************* */
+#tab .kbs_result_title {
+    width: 100%;
+    padding: 20px 5%;
+}
+#tab .kbs_result_title h3 {
+    font-size: 1.5rem;
+}
+#tab .result_class_title {
+    width: 100%;
+    margin: 20px 0;
+}
+#tab .result_class_title h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#tab .result_wrap {
+    width: 90%;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20px;
+}
+#tab .result_wrap table {
+    width: 100%;
+}
+#tab .result_wrap table th,
+#tab .result_wrap table td {
+    width: calc(100% / 6);
+    height: 30px;
+    text-align: center;
+}
+#tab .result_wrap table th {
+    background-color: #83C9D3;
+}
+#tab .result_wrap table .question_cell {
+    background-color: #16525C;
+    color: #fff;
+    font-weight: normal;
+}
+#tab .result_wrap table .th_cell {
+    background-color: #F5F5F5;
+    font-weight: normal;
+}
+#tab .result_wrap table .o_cell {
+    color: #00f;
+}
+#tab .result_wrap table .x_cell {
+    color: #f00;
+}
+#tab .result_btn_box {
+    width: 90%;
+    margin: 10px auto;
+}
+#tab .result_btn_box a:first-child {
+    display: inline-block;
+    width: 48%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #E5E5E5;
+    color: #000;
+    margin-right: 2%;
+}
+#tab .result_btn_box a:last-child {
+    display: inline-block;
+    width: 48%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000E1B;
+    color: #fff;
+}
 
 
 /* ************ bookcontest.html ************* */
