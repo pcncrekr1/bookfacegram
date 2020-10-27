@@ -19,3 +19,10 @@ $(function(){
     });
     
 });
+
+temp = location.href.split("?");
+data = temp[1];
+
+user_id = decodeURIComponent(data); //디코딩
+
+document.getElementById("id_name").innerHTML = user_id;
