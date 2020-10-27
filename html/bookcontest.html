@@ -21,54 +21,9 @@
     </header> -->
 
     <header id="header">
-        <div class="header_top">
-            <a href="#" class="menu_left">
-                <img src="../images/menu_left/icon/menu_icon.png" alt="메뉴 아이콘">
-            </a>
-            <h1><a href="new_books.html">BOOKPING</a></h1>
-            <a href="#" class="camera_btn">
-                <label for="camera"></label>
-                <input type="file" id="camera" name="camera" accept="image/*"/>
-            </a>
-        </div>
-
-        <div id="search">
-            <div class="search_wrap">
-                <input type="text" name="input_search" class="input_search" id="inputSearch">
-                <a href="#" class="magnifier_btn">
-                    <img src="../images/main_page/search/magnifier.png" alt="돋보기 아이콘">
-                </a>
-            </div>
-        </div>
-
-        <!-- tab menu -->
-        <div class="main_tab_menu">
-            <a href="new_books.html">NEW BOOKS</a>
-            <a href="my_books.html">MY BOOKS</a>
-            <a href="activity.html" class="main_tab_active">ACTIVITY</a>
-        </div>
     </header>
 
     <div id="navi">
-        <div class="gnb_hidden">
-            <div class="user_yellow">
-                <img src="../images/menu_left/icon/user.png" alt="프로필 사진">
-                <div><strong>PCNC_TT</strong>님</div>
-            </div>
-            <ul>
-                <li><a href="notice.html">ㆍ공지사항</a></li>
-                <li><a href="event.html">ㆍ이벤트</a></li>
-                <li><a href="bookdrawer.html">ㆍ책 서랍</a></li>
-                <li><a href="store.html">ㆍ북핑스토어</a></li>
-                <li><a href="profile.html">ㆍ개인정보수정</a></li>
-                <li><a href="faq.html">ㆍ도움말</a></li>
-                <li><a href="setting.html">ㆍ앱설정</a></li>
-            </ul>
-        </div>
-
-        <!-- gnb_hidden 투명 배경 -->
-        <div class="hidden_cover">
-        </div>
     </div>
 
     <div id="tab">
@@ -84,7 +39,14 @@
 
     <!-- My JS -->
     <script src="../js/main.js"></script>
-    <script src="../js/nav.js"></script>
+
+    <!-- header3, nav JS -->
+    <script>
+        $(function(){
+            $("#header").load("header3.html");
+            $("#navi").load("nav.html");
+        });
+    </script>
 
 </body>
 </html>
