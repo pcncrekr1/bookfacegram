@@ -40,66 +40,121 @@ body {
 
     font-size: 2rem;
 }
+#header .camera_btn {
+    width: 30px;
+    height: 23px;
+    position: absolute;
+    right: 5%;
+    top: 18px;
+}
+#header .camera_btn label {
+    width: 100%;
+    height: 100%; 
+    display: inline-block;
+    cursor: pointer;
+    background: url(../images/main_page/search/camera.png) no-repeat 0 0;
+    background-size: cover;
+} 
+#header .camera_btn input[type="file"] { /* 파일 필드 숨기기 */ 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0; 
+}
 
 
 
 
 /* **************** notice.html ******************* */
+#notice {
+    width: 100%;
+    border-top: 1px solid #F0F0F0;
+}
+#notice ul {
+    width: 100%;
+}
+#notice ul li {
+    width: 100%;
+    border-bottom: 1px solid #F0F0F0;
+}
+#notice ul li .notice_title_box {
+    width: 100%;
+}
+#notice ul li .notice_title_box a {
+    display: block;
+    width: 100%;
+    padding: 20px;
+}
+#notice ul li .notice_title_box a h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background: url(../images/menu_left/icon/angle_down.png) no-repeat 97% 50%;
+    background-size: 20px 12px;
+}
+#notice ul li .notice_title_box a .notice_list_date {
+    color: #B8B8B8;
+    font-size: 1.4rem;
+}
+#notice ul li p {
+    display: none;
+    width: calc(100% - 40px);
+    text-align: justify;
+    font-size: 1.4rem;
+    background-color: #F9F9F9;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+
+
+
+
 /* **************** event.html ******************* */
 /* 레이아웃 구성 시작 */
-#notice_list,
 #event_list {
     width: 100%;
     height: 100%;
-    border-top: 1px solid #F0F0F0;
 }
 
 /* 개별영역 선언 시작 */
-#notice_list ul,
 #event_list ul {
     width: 100%;
     height: 100%;
 }
-#notice_list ul li,
 #event_list ul li {
+    width: calc(100% - 40px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 10px;
+}
+#event_list ul li a {
+    display: block;
     width: 100%;
-    height: 100px;
-    padding: 20px;
-    border-bottom: 1px solid #F0F0F0;
 }
-#notice_list ul li a h2,
-#event_list ul li a h2 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-}
-#notice_list ul li a .notice_list_date,
-#event_list ul li a .event_list_date {
-    color: #B8B8B8;
-}
-
-
-/* **************** notice2.html ******************* */
-#notice2Title,
-#notice2Content {
+#event_list ul li a img {
     width: 100%;
-    padding: 20px;
 }
-#notice2Title h2 {
-    font-size: 1.8rem;
-    float: left;
+#event_list ul li a .event_title_box {
+    margin-top: 10px;
 }
-#notice2Title > div {
+#event_list ul li a .event_title_box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+#event_list ul li a .event_title_box .event_list_date {
     font-size: 1.4rem;
-    color: #C1C1C1;
-    float: right;
 }
-
 
 
 /* **************** event2.html ******************* */
 #event2 {
     width: 100%;
-    padding: 5%;
+    padding: 0 5%;
 }
 #event2 img {
     width: 100%;
@@ -107,14 +162,15 @@ body {
 }
 #event2 a {
     display: block;
-    width: 300px;
+    width: 100%;
     height: 50px;
     line-height: 50px;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    background-color: #F9B924;
-    margin: 30px auto;
+    background-color: #000E1B;
+    color: #fff;
+    margin: 10px 0;
 }
 
 
@@ -122,7 +178,7 @@ body {
 /* **************** event3.html ******************* */
 #event3 {
     width: 100%;
-    padding: 5%;
+    padding: 0 5%;
 }
 #event3 img {
     width: 100%;
@@ -130,7 +186,7 @@ body {
 }
 #event3 h2 {
     width: 100%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 20px 0 10px 0;
 }
 #event3 form {
@@ -174,17 +230,16 @@ body {
 #event3 ul li .comment_info .comment_date {
     float: right;
 }
+#event3 ul li .comment_content {
+    font-size: 1.4rem;
+    text-align: justify;
+}
 
 
 
 
 /* **************** bookdrawer.html ******************* */
 /* 레이아웃 구성 시작 */
-#sns_wrap {
-    width: 100%;
-    height: 100px;
-    padding-left: 20px;
-}
 #drawer_make {
     width: 96%;
     height: 80px;
@@ -196,48 +251,13 @@ body {
 }
 
 /* 개별영역 선언 시작 */
-#sns_wrap .sns_user {
-    width: 60px;
-    height: 60px;
-    float: left;
-    margin-top: 15px;
-}
-#sns_wrap .sns_user img {
-    width: 100%;
-    height: 100%;
-}
-#sns_wrap .sns_box {
-    width: 75%;
-    height: 100%;
-    float: right;
-    margin-right: 20px;
-}
-#sns_wrap .sns_box > div {
-    display: inline-block;
-    width: 32%;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-align: center;
-}
-#sns_wrap .sns_box > div img {
-    display: block;
-    width: 18px;
-    height: 18px;
-    margin: 10px auto;
-}
-#sns_wrap .sns_box > div span {
-    display: block;
-    color: #8B8B8B;
-    margin-top: 10px;
-}
-
 #drawer_make {
     border-top: 1px solid rgba(231, 231, 231, 0.3);
     border-right: 1px solid rgba(231, 231, 231, 0.8);
     border-left: 1px solid rgba(231, 231, 231, 0.8);
     border-bottom: 2px solid rgba(231, 231, 231, 1);
     line-height: 80px;
-    margin: 20px auto;
+    margin: 0px auto 20px auto;
 }
 #drawer_make > img {
     display: block;
@@ -1046,6 +1066,34 @@ body {
 /* ******************* Media Query ********************* */
 /* 태블릿 디바이스 (가로 해상도가 768px 보다 큰 화면에 적용) */
 @media (min-width: 768px) { 
+
+    /* notice.html */
+    #notice ul li .notice_title_box a h2 {
+        font-size: 1.8rem;
+    }
+
+    /* event.html */
+    #event_list ul li a .event_title_box h2 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    /* event2.html */
+    #event2 a {
+        font-size: 1.8rem;
+    }
+
+
+    /* event3.html */
+    #event3 h2 {
+        font-size: 1.8rem;
+    }
+
+
+
+
+
+
 
     /* font size */
     #store_tab .store_tab_menu ul li a {

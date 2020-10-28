@@ -1,5 +1,16 @@
 $(function(){
 
+    // notice title toggle
+    var notice_title = $(".notice_title_box a");
+    notice_title.click(function(){
+        console.log($(this));
+        $(this).parent().next().slideToggle(400);
+        $(this).parent().find("h2").toggleClass("angle_toggle");
+        event.preventDefault();
+    });
+
+    
+
     $('.store_banner_bx').bxSlider({
         minSlides: 1,
         maxSlides: 1,
