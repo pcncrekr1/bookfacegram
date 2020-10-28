@@ -34,6 +34,67 @@ $(function(){
 
 
 
+    // 독후감대회 응모하기 값 전부 입력시에만 버튼 활성화
+    $(".contest_submit").attr("disabled", true);
+
+    $("#grade").on("change", function(){
+        if( $("#grade").val() !== null && $("#grade").val() !== undefined && $("#grade").val() !== "" && 
+            $("#book_name").val() !== null && $("#book_name").val() !== undefined && $("#book_name").val() !== "" &&
+            $("#subject").val() !== null && $("#subject").val() !== undefined && $("#subject").val() !== "" && 
+            $("#book_content").val() !== null && $("#book_content").val() !== undefined && $("#book_content").val() !== "" && 
+            $("#ex_filename").val() !== null && $("#ex_filename").val() !== undefined && $("#ex_filename").val() !== "" ) {
+                $(".contest_submit").attr("disabled", false).addClass("contest_submit_active");
+        } else {
+            $(".contest_submit").attr("disabled", true).removeClass("contest_submit_active");
+        }
+    });
+    $("#book_name").on("change", function(){
+        if( $("#grade").val() !== null && $("#grade").val() !== undefined && $("#grade").val() !== "" && 
+            $("#book_name").val() !== null && $("#book_name").val() !== undefined && $("#book_name").val() !== "" &&
+            $("#subject").val() !== null && $("#subject").val() !== undefined && $("#subject").val() !== "" && 
+            $("#book_content").val() !== null && $("#book_content").val() !== undefined && $("#book_content").val() !== "" && 
+            $("#ex_filename").val() !== null && $("#ex_filename").val() !== undefined && $("#ex_filename").val() !== "" ) {
+                $(".contest_submit").attr("disabled", false).addClass("contest_submit_active");
+        } else {
+            $(".contest_submit").attr("disabled", true).removeClass("contest_submit_active");
+        }
+    });
+    $("#subject").on("keyup", function(){
+        if( $("#grade").val() !== null && $("#grade").val() !== undefined && $("#grade").val() !== "" && 
+            $("#book_name").val() !== null && $("#book_name").val() !== undefined && $("#book_name").val() !== "" &&
+            $("#subject").val() !== null && $("#subject").val() !== undefined && $("#subject").val() !== "" && 
+            $("#book_content").val() !== null && $("#book_content").val() !== undefined && $("#book_content").val() !== "" && 
+            $("#ex_filename").val() !== null && $("#ex_filename").val() !== undefined && $("#ex_filename").val() !== "" ) {
+                $(".contest_submit").attr("disabled", false).addClass("contest_submit_active");
+        } else {
+            $(".contest_submit").attr("disabled", true).removeClass("contest_submit_active");
+        }
+    });
+    $("#book_content").on("keyup", function(){
+        if( $("#grade").val() !== null && $("#grade").val() !== undefined && $("#grade").val() !== "" && 
+            $("#book_name").val() !== null && $("#book_name").val() !== undefined && $("#book_name").val() !== "" &&
+            $("#subject").val() !== null && $("#subject").val() !== undefined && $("#subject").val() !== "" && 
+            $("#book_content").val() !== null && $("#book_content").val() !== undefined && $("#book_content").val() !== "" && 
+            $("#ex_filename").val() !== null && $("#ex_filename").val() !== undefined && $("#ex_filename").val() !== "" ) {
+                $(".contest_submit").attr("disabled", false).addClass("contest_submit_active");
+        } else {
+            $(".contest_submit").attr("disabled", true).removeClass("contest_submit_active");
+        }
+    });
+    $("#ex_filename").on("change", function(){
+        if( $("#grade").val() !== null && $("#grade").val() !== undefined && $("#grade").val() !== "" && 
+            $("#book_name").val() !== null && $("#book_name").val() !== undefined && $("#book_name").val() !== "" &&
+            $("#subject").val() !== null && $("#subject").val() !== undefined && $("#subject").val() !== "" && 
+            $("#book_content").val() !== null && $("#book_content").val() !== undefined && $("#book_content").val() !== "" && 
+            $("#ex_filename").val() !== null && $("#ex_filename").val() !== undefined && $("#ex_filename").val() !== "" ) {
+                $(".contest_submit").attr("disabled", false).addClass("contest_submit_active");
+        } else {
+            $(".contest_submit").attr("disabled", true).removeClass("contest_submit_active");
+        }
+    });
+
+
+
     // 더블클릭 시 도서 찜 하트 표시
     var book_detail_img = $("#tab .book_like_wrap > img");
     book_detail_img.dblclick(function() { 
