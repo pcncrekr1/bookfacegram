@@ -317,6 +317,53 @@ body {
 
 
 
+
+/* **************** feedbook.html ******************* */
+#sns_wrap {
+    width: 100%;
+    height: 100px;
+    padding-left: 20px;
+}
+#sns_wrap .sns_user {
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-top: 15px;
+}
+#sns_wrap .sns_user img {
+    width: 100%;
+    height: 100%;
+}
+#sns_wrap .sns_box {
+    width: 75%;
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+}
+#sns_wrap .sns_box > div {
+    display: inline-block;
+    width: 32%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+#sns_wrap .sns_box > div img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 10px auto;
+}
+#sns_wrap .sns_box > div span {
+    display: block;
+    color: #8B8B8B;
+    margin-top: 10px;
+}
+
+
+
+
+
+
 /* **************** point.html ******************* */
 /* 레이아웃 구성 시작 */
 #totalPointWrap {
