@@ -52,7 +52,7 @@ $(function(){
         auto: false,
         pager: false,
         controls: false,
-        slideWidth: 1200,
+        slideWidth: 1098,
         touchEnabled : (navigator.maxTouchPoints > 0),
         moveSlides: 1,
         slideMargin: 0
