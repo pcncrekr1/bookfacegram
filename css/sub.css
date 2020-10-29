@@ -440,67 +440,27 @@ body {
 
 
 /* **************** point.html ******************* */
-/* 레이아웃 구성 시작 */
-#totalPointWrap {
-    width: 96%;
-    height: 150px;
-    background-color: #FFF7EC;
-    margin: 0 auto;
+.total_point_wrap {
+    width: calc(100% - 40px);
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
 }
-#detailPointList {
-    width: 100%;
+.total_point_wrap div:first-child {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.total_point_wrap div:last-child {
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 
-/* 개별영역 선언 시작 */
-#totalPointWrap .left_point {
-    width: 55%;
-    height: 100%;
-    float: left;
-    padding: 40px 0 0 20px;
-}
-#totalPointWrap .left_point div:first-child {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-#totalPointWrap .left_point div:last-child {
-    font-size: 4rem;
-    font-weight: 500;
-}
-#totalPointWrap .right_point {
-    width: 45%;
-    height: 100%;
-    font-weight: bold;
-    float: left;
-}
-#totalPointWrap .right_point .top_point {
-    width: 100%;
-    height: 49%;
-    border-bottom: 1px solid #F3E3CA;
-    padding-top: 45px;
-}
-#totalPointWrap .right_point .top_point > div:first-child {
-    float: left;
-}
-#totalPointWrap .right_point .top_point > div:last-child {
-    float: right;
-    margin-right: 20px;
-}
-#totalPointWrap .right_point .bottom_point {
-    width: 100%;
-    height: 50%;
-    padding-top: 15px;
-}
-#totalPointWrap .right_point .bottom_point > div:first-child {
-    float: left;
-}
-#totalPointWrap .right_point .bottom_point > div:last-child {
-    float: right;
-    margin-right: 20px;
-}
 #detailPointList {
-    width: 100%;
+    width: calc(100% - 40px);
     height: 100%;
+    margin: 0 auto;
 }
 #detailPointList ul {
     width: 100%;
@@ -508,17 +468,33 @@ body {
 }
 #detailPointList ul li {
     width: 100%;
-    height: 70px;
-    line-height: 70px;
-    border-bottom: 1px solid #F4F4F4;
-    padding: 0 5%;
+    border-bottom: 1px solid #eee;
+    padding: 20px 0;
 }
-#detailPointList ul li div:first-child {
+#detailPointList ul li > div:first-child {
     float: left;
 }
-#detailPointList ul li div:last-child {
+#detailPointList ul li > div:last-child {
     float: right;
+    font-size: 1.6rem;
+    font-weight: bold;
 }
+#detailPointList .detail_point_text div:first-child {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#detailPointList .detail_point_text div:last-child {
+    font-size: 1.3rem;
+    color: #aaa;
+}
+#detailPointList ul li .detail_point_plus {
+    color: #228DD4;
+}
+#detailPointList ul li .detail_point_minus {
+    color: #B3B3B3;
+}
+
 
 
 
@@ -1284,6 +1260,24 @@ body {
     /* store2.html */
     #store2 .store2_wrap a {
         font-size: 1.8rem;
+    }
+
+
+    /* point.html */
+    .total_point_wrap div:first-child {
+        font-size: 1.6rem;
+    }
+    .total_point_wrap div:last-child {
+        font-size: 2.6rem;
+    }
+    #detailPointList ul li > div:last-child {
+        font-size: 1.8rem;
+    }
+    #detailPointList .detail_point_text div:first-child {
+        font-size: 1.8rem;
+    }
+    #detailPointList .detail_point_text div:last-child {
+        font-size: 1.5rem;
     }
 
 
