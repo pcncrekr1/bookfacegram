@@ -9,6 +9,41 @@ $(function(){
         event.preventDefault();
     });
 
+
+
+    // feedbook tab show & hide
+    var my_btn = $('.feedbook_tab_menu div:first-child a');
+    var other_btn = $('.feedbook_tab_menu div:last-child a');
+    var my_btn_img = $('.feedbook_tab_menu div:first-child a img');
+    var other_btn_img = $('.feedbook_tab_menu div:last-child a img');
+    var feedbook_tab_my = $('.feedbook_tab_my');
+    var feedbook_tab_other = $('.feedbook_tab_other');
+
+    // 초기값 설정
+    my_btn.addClass("feedbook_tab_menu_on");
+    my_btn_img.attr("src", "../images/menu_left/feedbook/my_o.png");
+    feedbook_tab_my.css("display", "block");
+
+    my_btn.click(function(){
+        my_btn.addClass('feedbook_tab_menu_on');
+        other_btn.removeClass('feedbook_tab_menu_on');
+        my_btn_img.attr("src", "../images/menu_left/feedbook/my_o.png");
+        other_btn_img.attr("src", "../images/menu_left/feedbook/other.png");
+        feedbook_tab_my.css('display', 'block');
+        feedbook_tab_other.css('display', 'none');
+        event.preventDefault();
+    });
+    other_btn.click(function(){
+        my_btn.removeClass('feedbook_tab_menu_on');
+        other_btn.addClass('feedbook_tab_menu_on');
+        my_btn_img.attr("src", "../images/menu_left/feedbook/my.png");
+        other_btn_img.attr("src", "../images/menu_left/feedbook/other_o.png");
+        feedbook_tab_my.css('display', 'none');
+        feedbook_tab_other.css('display', 'block');
+        event.preventDefault();
+    });
+
+
     
 
     $('.store_banner_bx').bxSlider({
