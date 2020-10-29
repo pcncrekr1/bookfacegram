@@ -49,8 +49,8 @@ $(function(){
     $('.store_banner_bx').bxSlider({
         minSlides: 1,
         maxSlides: 1,
-        auto: true,
-        pager: true,
+        auto: false,
+        pager: false,
         controls: false,
         slideWidth: 1200,
         touchEnabled : (navigator.maxTouchPoints > 0),
