@@ -174,54 +174,23 @@ $(function(){
 
 
     // textarea 글자수, 해시태그 제한
-    $('#talkArea').keydown(function (event){
-        var content = $(this).val();
-
+    $(".talk_submit").click(function(){
+        
+        // 200자 제한
+        var content = $('#talkArea').val();
         if (content.length > 200){
             alert("최대 200자까지 입력 가능합니다.");
-            $(this).val(content.substring(0, 200));
+            return false;
         }
 
-        // 해시태그
-        // var splitedArray = content.split(' '); // 공백을 기준으로 문자열을 자른다.
-
-        // var linkedContent = '';
-        // var linkedContentArray = [];
-        // for(var word in splitedArray) {
-        //     word = splitedArray[word];
-        //     if(word.indexOf('#') == 0) { // # 문자를 찾는다.
-        //         linkedContentArray += word;
-        //         word = '<a href="\링크">' + word + '</a>'; 
-        //     }
-        //     linkedContent += word + ' ';
-        // }
-        
-        // linkedContentArray = content.split(' #'); 
-        // console.log(linkedContentArray);
-        // if (linkedContentArray.length > 10 && event.keyCode != 13){
-        //     alert("해시태그는 최대 10개까지 입력 가능합니다.");
-        //     $(this).val(content.substring(0, 200));
-        // }
-        // console.log(linkedContent);
-
-
-        var splitedArray = content.split(" "); // 공백을 기준으로 문자열을 자른다.
-        console.log(splitedArray);
-        var hashtags = "";
-
-        for(var i in splitedArray) {
-            var word = splitedArray[i];
-            if(word.indexOf('#') == 0) { // # 문자를 찾는다.
-                hashtags += splitedArray[i] + " ";
-            }
-        }
-
-        var hashtagsArray = hashtags.split(" ");
-        console.log("hashtagsArray : " + hashtagsArray);
-        if(hashtagsArray.length - 1 > 10) {
-            alert("해시태그는 최대 10개까지 입력 가능합니다.");
-            $(this).val(content.slice(0, -1)); // 맨 끝 해시태그 제거
+        // 해시태그 10개 제한
+        var tags = [];
+        content = content.replace(/#[^#\s,;]+/gm, function(tag) {
+            tags.push(tag);
+        });
+        if(tags.length > 10) {
+            alert("해시태그는 10개까지만 입력 가능합니다.");
+            return false;
         }
     });
-
 });
