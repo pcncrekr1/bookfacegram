@@ -16,17 +16,35 @@ $(function() {
 
 
 
-    $(".feedbook_tab_content").swipe( {
-        pinchStatus:function(event, phase, direction, distance , duration , fingerCount, pinchZoom, fingerData) {
-            // $(this).html("Pinch zoom " + pinchZoom + "  <br/>Distance pinched " + distance +" <br/>Direction " + direction);
-            console.log(direction);
-            if(direction == "in") {
+    // $(".feedbook_tab_content").swipe( {
+    //     pinchStatus:function(event, phase, direction, distance , duration , fingerCount, pinchZoom, fingerData) {
+    //         // $(this).html("Pinch zoom " + pinchZoom + "  <br/>Distance pinched " + distance +" <br/>Direction " + direction);
+    //         console.log(direction);
+    //         if(direction == "in") {
 
-            }
+    //         }
+    //     },
+    //     fingers:2,
+    //     threshold:0,
+    //     preventDefaultEvents:false
+    // });
+
+
+
+    $(".feedbook_tab_content").swipe( {
+        pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom)
+        {
+            $(this).html("You pinched " +direction + " by " + distance +"px, zoom scale is "+pinchZoom);
         },
-        fingers:2,
-        threshold:0,
-        preventDefaultEvents:false
+        pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom)
+        {
+            $(this).html("You pinched " +direction + " by " + distance +"px, zoom scale is "+pinchZoom);
+        },
+        pinchStatus:function(event, phase, direction, distance , duration , fingerCount, pinchZoom) {
+            // $(this).html("Pinch zoom scale "+pinchZoom+"  <br/>Distance pinched "+distance+" <br/>Direction " + direction);
+        },
+        fingers:2,  
+        pinchThreshold:0  
     });
 
 
@@ -44,16 +62,11 @@ $(function() {
         touchAction: ""
     });
 
-    // var zoom_count = 0;
+    // element.addEventListener('panzoomstart', function(event) {
+        
+    // });
+
     element.addEventListener('panzoomend', function(event) {
-        // zoom_count++;
-        // if(zoom_count === 1){
-        //     element.children().children().css("width", "25%");
-        // } else if(zoom_count === 3) {
-        //     zoom_count = 0;
-        // }
-
-
         // $(".feedbook_tab_content").swipe( {
         //     pinchStatus:function(event, phase, direction, distance , duration , fingerCount, pinchZoom, fingerData) {
         //         // $(this).html("Pinch zoom " + pinchZoom + "  <br/>Distance pinched " + distance +" <br/>Direction " + direction);
