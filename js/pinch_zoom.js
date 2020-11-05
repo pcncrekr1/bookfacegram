@@ -31,21 +31,21 @@ $(function() {
 
 
 
-    $(".feedbook_tab_content").swipe( {
-        pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom)
-        {
-            $(this).html("You pinched " +direction + " by " + distance +"px, zoom scale is "+pinchZoom);
-        },
-        pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom)
-        {
-            $(this).html("You pinched " +direction + " by " + distance +"px, zoom scale is "+pinchZoom);
-        },
-        pinchStatus:function(event, phase, direction, distance , duration , fingerCount, pinchZoom) {
-            // $(this).html("Pinch zoom scale "+pinchZoom+"  <br/>Distance pinched "+distance+" <br/>Direction " + direction);
-        },
-        fingers:2,  
-        pinchThreshold:0  
-    });
+    // $(".feedbook_tab_content").swipe( {
+    //     pinchIn:function(event, direction, distance, duration, fingerCount, pinchZoom)
+    //     {
+    //         $(this).html("You pinched " +direction + " by " + distance +"px, zoom scale is "+pinchZoom);
+    //     },
+    //     pinchOut:function(event, direction, distance, duration, fingerCount, pinchZoom)
+    //     {
+    //         $(this).html("You pinched " +direction + " by " + distance +"px, zoom scale is "+pinchZoom);
+    //     },
+    //     pinchStatus:function(event, phase, direction, distance , duration , fingerCount, pinchZoom) {
+    //         // $(this).html("Pinch zoom scale "+pinchZoom+"  <br/>Distance pinched "+distance+" <br/>Direction " + direction);
+    //     },
+    //     fingers:2,  
+    //     pinchThreshold:0  
+    // });
 
 
 
@@ -66,6 +66,10 @@ $(function() {
         
     // });
 
+    element.addEventListener('panzoomzoom', function(event) {
+        $(".feedbook_tab_content").children().children().css("width", "25%");
+    });
+
     element.addEventListener('panzoomend', function(event) {
         // $(".feedbook_tab_content").swipe( {
         //     pinchStatus:function(event, phase, direction, distance , duration , fingerCount, pinchZoom, fingerData) {
@@ -79,8 +83,6 @@ $(function() {
 
         // console.log(event);
 
-
-        $(".feedbook_tab_content").children().children().css("width", "25%");
         panzoom.reset();
     });
         

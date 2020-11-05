@@ -394,7 +394,7 @@ body {
 /* 찜하기 더블클릭 토글 클래스 */
 .choice_heart_on {
     display: block !important;
-    font-size: 3rem !important;
+    font-size: 5rem !important;
     font-weight: bold !important;
     color: #fff !important;
 

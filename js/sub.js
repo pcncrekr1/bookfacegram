@@ -44,19 +44,18 @@ $(function(){
     });
 
 
-    
-
-    $('.store_banner_bx').bxSlider({
-        minSlides: 1,
-        maxSlides: 1,
-        auto: false,
-        pager: false,
-        controls: false,
-        slideWidth: 1098,
-        touchEnabled : (navigator.maxTouchPoints > 0),
-        moveSlides: 1,
-        slideMargin: 0
-    });
+    // 배너가 하나밖에 없어 버그 발생, 일단 슬라이드 적용하지 않고 이미지로 박아놓음
+    // $('.store_banner_bx').bxSlider({
+    //     minSlides: 1,
+    //     maxSlides: 1,
+    //     auto: false,
+    //     pager: false,
+    //     controls: false,
+    //     slideWidth: 1098,
+    //     touchEnabled : (navigator.maxTouchPoints > 0),
+    //     moveSlides: 1,
+    //     slideMargin: 0
+    // });
 
 
     // store tab show & hide
