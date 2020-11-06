@@ -22,8 +22,9 @@ body {
 }
 #header .back {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
 }
 #header .back img {
     width: 100%;
@@ -325,17 +326,17 @@ body {
     padding-left: 20px;
 }
 #sns_wrap .sns_user {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     float: left;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 #sns_wrap .sns_user img {
     width: 100%;
     height: 100%;
 }
 #sns_wrap .sns_box {
-    width: 75%;
+    width: 70%;
     height: 100%;
     float: right;
     margin-right: 20px;
@@ -365,7 +366,7 @@ body {
 /* tab menu */
 .feedbook_tab_menu {
     width: 100%;
-    height: 50px;
+    height: 40px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
@@ -383,15 +384,15 @@ body {
 }
 .feedbook_tab_menu div a {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     margin-top: 10px;
     position: relative;
 }
 .feedbook_tab_menu div a:hover::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 40px;
     height: 3px;
     background-color: #000;
     position: absolute;
@@ -406,7 +407,7 @@ body {
 .feedbook_tab_menu_on::after {
     content: '' !important;
     display: block !important;
-    width: 60px !important;
+    width: 40px !important;
     height: 3px !important;
     background-color: #000 !important;
     position: absolute !important;
@@ -576,16 +577,19 @@ body {
     width: 80px;
     height: 40px;
     float: right;
-    border-radius: 2px;
-    border: 1px solid #000;
     outline: none;
-    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #000;
+    border-radius: 2px;
+    background-color: #333333;
+    color: #fff;
     margin: 15px 2% 10px 0;
 }
 /* 팔로우 버튼 토글 클래스 */
 .followToggle {
-    background-color: #333333 !important;
-    color: #fff !important;
+    border: 1px solid #000 !important;
+    border-radius: 2px !important;
+    background-color: #fff !important;
+    color: #000 !important;
 }
 
 
@@ -609,10 +613,9 @@ body {
 }
 #store_tab .store_tab_menu {
     width: 100%;
-    height: 50px;
+    height: 40px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
 }
 #store_tab .store_tab_menu ul {
     width: 100%;
@@ -627,7 +630,7 @@ body {
     display: block;
     font-size: 1.5rem;
     font-weight: bold;
-    line-height: 50px;
+    line-height: 40px;
     position: relative;
 }
 /* 탭메뉴 활성화 클래스 */

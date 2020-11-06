@@ -180,10 +180,10 @@ $(function(){
     var followBtn = $("#followingList ul li button");
     followBtn.click(function(){
         $(this).toggleClass("followToggle");
-        if($(this).text() === "팔로우"){
-            $(this).html('팔로잉');
-        } else {
+        if($(this).text() === "팔로잉"){
             $(this).html('팔로우');
+        } else {
+            $(this).html('팔로잉');
         }
     });
 
