@@ -429,8 +429,9 @@ body {
 }
 .feedbook_tab_content a {
     display: block;
-    width: 33.3%;
+    width: calc(33.3% - 2px);
     float: left;
+    border: 1px solid #fff;
 }
 .feedbook_tab_content a img {
     display: block;

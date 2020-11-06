@@ -67,7 +67,7 @@ $(function() {
     // });
 
     element.addEventListener('panzoomzoom', function(event) {
-        $(".feedbook_tab_content").children().children().css("width", "25%");
+        $(".feedbook_tab_content").children().children().css("width", "calc(25% - 2px)");
     });
 
     element.addEventListener('panzoomend', function(event) {
